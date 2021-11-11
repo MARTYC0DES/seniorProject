@@ -31,10 +31,11 @@ body{
     color: black;
 }
 footer{
+    /*position: fixed;*/
     background: black;
     height: 150px;
-    position: relative;
 }
+
 .footInfo{
     color: white;
     font-size: medium;
