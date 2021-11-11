@@ -1,0 +1,52 @@
+.border{
+    background: rgb(195, 182, 129);
+    height: 150px;
+}
+
+.lineUp{
+    font-weight: 100;
+    display: inline;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(3,76,56);
+}
+
+body{
+    background: rgb(241,241,241);
+}
+.joinButton{
+    background: white;
+    border: none;
+    color: rgb(3,76,56);
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+}
+.navButtons{
+    padding-top: 50px;
+    text-align: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+}
+footer{
+    background: black;
+    height: 150px;
+    position: relative;
+}
+.footInfo{
+    color: white;
+    font-size: medium;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.numberHref{
+    color: rgb(195, 182, 129);
+}
+
+h1{
+    text-align: center;
+    color: rgb(3,76,56);
+}
