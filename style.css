@@ -1,14 +1,20 @@
-.border{
+#border{
     background: rgb(195, 182, 129);
-    height: 150px;
+    height: 100px;
+}
+
+.esportsLogo{
+    width: 245px;
+    height: 109px;
 }
 
 .lineUp{
-    font-weight: 100;
+    font-weight: 150px;
     display: inline;
-    text-align: center;
+    text-align: left;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 25px;
     color: rgb(3,76,56);
 }
 
@@ -24,11 +30,15 @@ body{
     border-radius: 8px;
 }
 .navButtons{
-    padding-top: 50px;
-    text-align: right;
+    text-align: left;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 5px;
     color: black;
+}
+#navRight{
+    float: right;
+    margin-top: 20px;
 }
 footer{
     /*position: fixed;*/
