@@ -1,7 +1,14 @@
 .border{
     background: rgb(195, 182, 129);
     height: 100px;
-    object-fit: cover;
+    width: 1264px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
 }
 
 .esportsLogo{
@@ -13,7 +20,8 @@
     width: 1264px;
     height: 443;
     position: relative;
-    object-position: center;
+
+
 }
 .logoSac{
     width: 370px;
@@ -27,8 +35,8 @@
     font-weight: 150px;
     display: inline;
     text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 25px;
     color: rgb(3,76,56);
 }
@@ -40,10 +48,11 @@ body{
 .joinButton{
     background: white;
     border: none;
-    color: rgb(3,76,56);
-    padding: 12px;
+    color: rgb(0,78,56);
+    display: inline;
+    padding: 13px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 .navButtons{
     text-align: left;
@@ -57,9 +66,15 @@ body{
     float: right;
     margin-top: 20px;
 }
+
+#extraPadding{
+    float: left;
+    padding-right:70px;
+}
 footer{
     background: black;
     height: 150px;
+    width: 1264px;
 }
 
 .footInfo{
@@ -82,4 +97,23 @@ h1{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+}
+
+.liberatorFont{
+  color: rgb(0,78,56);
+  font-size: 22px;
+  font-family: liberator;
+  text-align: center;
+}
+
+.liberatorFontLarge{
+  color: rgb(0,78,56);
+  font-size: 35px;
+  font-family: liberator;
+  text-align: center;
+}
+
+@font-face{
+  src: url('fonts/Liberator.ttf');
+  font-family: liberator;
 }
