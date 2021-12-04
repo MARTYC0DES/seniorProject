@@ -41,6 +41,7 @@ body, html{
 }
 
 .lineUp{
+    cursor: pointer;
     font-weight: 150px;
     display: inline;
     text-align: left;
@@ -55,6 +56,12 @@ body{
 }
 .nav-container{
     display: inline;
+}
+
+a{
+    color:rgb(3,76,56);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .join-button{
