@@ -1,6 +1,7 @@
 body, html{
     padding:0;
     margin:0;
+    height:100%
 }
 .border{
     background: rgb(195, 182, 129);
@@ -8,6 +9,7 @@ body, html{
     width: 1264px;
     margin: 0;
     padding: 0;
+    display: inline;
 }
 
 .center{
@@ -20,6 +22,7 @@ body, html{
 .esportsLogo{
     width: 320px;
     height: 106.75px;
+    align-items: left;
 }
 
 .homeImg{
@@ -34,6 +37,7 @@ body, html{
     padding-top: 10px;
     float: left;
     padding-left: 50px;
+    padding-right: 30px;
 }
 
 .lineUp{
@@ -49,19 +53,23 @@ body, html{
 body{
     background: rgb(241,241,241);
 }
-
-
-.joinButton{
-    background: white;
-    border: none;
-    color: rgb(0,78,56);
+.nav-container{
     display: inline;
-    padding: 13px;
+}
+
+.join-button{
+    background:white;
+    border: none;
+    display: inline;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(0,78,56);
     text-align: center;
-    border-radius: 15px;
+    padding: 13px;
+    font-size: 15px;
 }
 .navButtons{
-    text-align: left;
+    text-align: right;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -75,21 +83,19 @@ body{
 
 #extraPadding{
     float: left;
-    padding-right:70px;
-}
-footer{
-    background: black;
-    height: 150px;
-    width: 1264px;
+    padding-right:50px;
+    padding-left: 30px;
+
 }
 
 .footInfo{
     color: white;
     font-size: large;
-    text-align: right;
     padding-top: 20px;
-    padding-right: 50px;
+    float: right;
+    padding-right: 5%;
 }
+
 .numberHref{
     color: rgb(195, 182, 129);
 }
@@ -128,4 +134,69 @@ h1{
 @font-face{
   src: url('fonts/Liberator.ttf');
   font-family: liberator;
+}
+.twitter-container{
+    padding-left: 100px;
+    padding-bottom: 150px;
+}
+.footer-container{
+  background:black;
+  position: relative;
+  height: 125px;
+  margin-top: -100px;
+  clear: both;
+  text-align: left;
+}
+
+
+.social-resize{
+    align-items: center;
+    float: center;
+    width: 30px;
+    height: 30px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.facebook-resize{
+    align-items: center;
+    float: center;
+    width: 45px;
+    height: 30px;
+    padding-left: 50px;
+    padding-top: 50px; 
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+input, select{
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }

@@ -1,6 +1,10 @@
 <!-- DOCTYPE html-->
 <html>
-<link href='style.css' rel='stylesheet'>
+  <head>
+    <title>CSUS Esports</title>
+    <link href='style.css' rel='stylesheet'>
+  </head>
+
 <body>
 
    <style>
@@ -13,31 +17,34 @@
    </style>
 
    <header class="border center">
-       <title>CSUS Esports</title>
-       <div>
-       <nav>
+
+      <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
+
+      <nav>
        <div style="position:relative; top:-4px; left:-30px">
-       <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
+     
         <ul class="navButtons">
           <div id="navRight">
-            <div style="position:relative; top:-105px;">
-              <div id ="extraPadding">
-              <li class="joinButton liberatorFont">JOIN OUR TEAM</li>
-              </div>
-            <li class="lineUp liberatorFont">ABOUT</li>
+            <div style="position:relative; top:-105px">
+              <li class="lineUp"><button class="join-button libratorFont" id="button">JOIN OUR TEAM</button>
+                <script src="Component.js"></script>
+              </li>
+            <li class="lineUp liberatorFont">WATCH</li>
             <li class="lineUp liberatorFont">TEAMS</li>
             <li class="lineUp liberatorFont">MATCH</li>
-            <li class="lineUp liberatorFont">NEWS</li>
+            <li class="lineUp liberatorFont"><a href="about.html">ABOUT</a></li>
             <li class="lineUp liberatorFont">CONTACTS</li>
          </div>
         </ul>
-       </nav>
-       </div>
+        </div>
+      </nav>
    </header>
-   <div class="background-image"><div/>
-   <div style="position:relative; top:-74px;">
+
+   <div class="background-image">
+   <div style="position:relative; top:-99px;">
    <img src="images/homeImage.jpg" class="homeImg center" alt="Cover page" >
-   <h1 class = "liberatorFontLarge"> INTERSTED IN ESPORTS? </h1>
+
+   <h1 class = "liberatorFontLarge" style="padding-top: 20px;"> INTERSTED IN ESPORTS? </h1>
    <p class="coverPageFont maxWidth1 center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -48,17 +55,57 @@
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
         <br>
    </p>
+  </div> 
+
+  <aside>
+    <div class="twitter-container">
+     <a class="twitter-timeline" data-width="450" data-height="500"
+     href="https://twitter.com/esports_sac?ref_src=twsrc%5Etfw">Tweets by esports_sac</a> 
+     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </aside>
+
+    <footer class = "footer-container">
+            <img src="images/sacState.png" class="logoSac" atl="sacState logo">
+
+            <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
+            <a href="https://www.instagram.com/esportssacstate"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
+            <a href=""><img class="facebook-resize" src="images/Facebook-logo.png"  alt="facebook logo"></a>
+            <a href="#"><img class="social-resize" src="images/discord-mascot.png"  alt="discord logo"></a>
+
+            <p class="footInfo">
+             California State University, Sacramento <br>
+             6000 J Street, Sacramento, CA 95819 <br>
+             Campus Main Phone: <a href="tel:9162786011" class="numberHref">(916)278-6011 </a>
+            </p>
+    </footer>
+
+    <!-- Modal Section -->
+ <div class="bg-modal">
+  <div class="modal-content">
+  <h2>Inquiry to join a team</h2>
+  <form action="">
+      <div class="close" id="close">+</div>
+      <script src="Component.js"></script>
+      <input type="text" placeholder="First name">
+      <input type="text" placeholder="Last name">
+      <input type="email" placeholder="Student E-mail">
+      <input type="text" style="height: 50px" placeholder="Tell us about yourself">
+      
+      <!-- Drop list for Inquiry Form -->
+      <select class="Game type">
+          <option disabled selected value>Pick a team</option>
+          <option value="LOL">Leage of Legends</option>
+          <option value="Overwatch">Overwatch</option>
+          <option value="Vanguard">Vanguard</option>
+          <option value="RocketLeague">Rocket League</option>
+          <option value="CSGO">CSGO</option>
+      </select>
+      <a href="" class="button">Submit</a>
+  </form>
+  </div>
+</div>
+
+
 </body>
-
-
-
- <div>
- <footer class = "center">
-     <div style="position:relative; top:-10px;">
-     <p class="footInfo"> <img src="images/sacState.png" class="logoSac" atl="sacState logo">California State University, Sacramento <br>
-        6000 J Street, Sacramento, CA 95819 <br>
-        Campus Main Phone: <a href="tel:9162786011" class="numberHref">(916)278-6011 </a>
-    </p>
- </footer>
- </div>
 </html>
