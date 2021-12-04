@@ -5,45 +5,44 @@
     <link href='style.css' rel='stylesheet'>
   </head>
 
-<body>
+<body class="background-image">
 
-   <style>
-     .background-image{
-       background-image: url('./images/background_color.png');
-       background-size: cover;
-       background-repeat: no-repeat;
-       height:100vh;
-     }
-   </style>
+
+
 
    <header class="border center">
 
       <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
-      <nav>
-       <div style="position:relative; top:-4px; left:-30px">
-      
-        <ul class="navButtons">
-          <div id="navRight">
-            <div style="position:relative; top:-105px">
-              <li class="lineUp"><button class="join-button libratorFont" id="button">JOIN OUR TEAM</button>
-                <script src="Component.js"></script>
-              </li>
+
+      <div style="position:relative; top:-75px; left:400px">
+        <button class="join-button libratorFont" id="button">JOIN OUR TEAM</button>
+           <script src="index.js"></script>
+       </div>
+
+          <div id="navRight" style="position:relative; top:-153px; left:-50px">
+            <ul class="navButtons">
             <li class="lineUp liberatorFont">WATCH</li>
             <li class="lineUp liberatorFont">TEAMS</li>
             <li class="lineUp liberatorFont">MATCH</li>
             <li class="lineUp liberatorFont"><a href="about.html">ABOUT</a></li>
             <li class="lineUp liberatorFont">CONTACTS</li>
          </div>
+
+         <div style="position:relative; top:-135px">
+         <img src="images/homeImage.jpg" class="homeImg center" alt="Cover page" >
+         </div>
+
+         <div style="position:relative; top:-640px; left:850px">
+         <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
+         <a href="https://www.instagram.com/esportssacstate"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
+         <a href=""><img class="facebook-resize" src="images/Facebook-logo.png"  alt="facebook logo"></a>
+         <a href="#"><img class="social-resize" src="images/discord-mascot.png"  alt="discord logo"></a>
         </ul>
         </div>
-      </nav>
    </header>
 
-   <div class="background-image">
-   <div style="position:relative; top:-99px;">
-   <img src="images/homeImage.jpg" class="homeImg center" alt="Cover page" >
-
-   <h1 class = "liberatorFontLarge" style="padding-top: 20px;"> INTERSTED IN ESPORTS? </h1>
+   <div>
+   <h1 class = "liberatorFontLarge center" style="padding-top: 500px;"> INTERSTED IN ESPORTS? </h1>
    <p class="coverPageFont maxWidth1 center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -54,12 +53,12 @@
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
         <br>
    </p>
-  </div> 
+  </div>
 
   <aside>
     <div class="twitter-container">
      <a class="twitter-timeline" data-width="450" data-height="500"
-     href="https://twitter.com/esports_sac?ref_src=twsrc%5Etfw">Tweets by esports_sac</a> 
+     href="https://twitter.com/esports_sac?ref_src=twsrc%5Etfw">Tweets by esports_sac</a>
      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </aside>
@@ -68,7 +67,7 @@
             <img src="images/sacState.png" class="logoSac" atl="sacState logo">
 
             <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
-            <a href="https://www.instagram.com/esportssacstate"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
+            <a href="https://www.instagram.com/esportssacstate/"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
             <a href=""><img class="facebook-resize" src="images/Facebook-logo.png"  alt="facebook logo"></a>
             <a href="#"><img class="social-resize" src="images/discord-mascot.png"  alt="discord logo"></a>
 
@@ -91,7 +90,7 @@
       <input type="text" placeholder="Last name">
       <input type="email" placeholder="Student E-mail">
       <input type="text" style="height: 50px" placeholder="Tell us about yourself">
-      
+
       <!-- Drop list for Inquiry Form -->
       <select class="Game type">
           <option disabled selected value>Pick a team</option>
