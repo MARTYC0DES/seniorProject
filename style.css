@@ -158,6 +158,13 @@ h1{
   text-align: center;
 }
 
+.liberatorFontXLarge{
+  color: rgb(0,78,56);
+  font-size: 50px;
+  font-family: liberator;
+  text-align: center;
+}
+
 .liberatorFontLargeBlack{
   color: rgb(0,0,0);
   font-size: 35px;
