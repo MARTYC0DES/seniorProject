@@ -21,21 +21,20 @@
        <nav>
        <div style="position:relative; top:-4px; left:-30px">
        <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
-        <ul class="navButtons">
-          <div id="navRight">
-            <div style="position:relative; top:-105px;">
-              <div id ="extraPadding">
-              <li class="joinButton liberatorFont">JOIN OUR TEAM</li>
-              </div>
-              <li class="lineUp liberatorFont">HOME</li>
-              <li class="lineUp liberatorFont">WATCH</li>
-              <li class="lineUp liberatorFont">MATCH</li>
-              <li class="lineUp liberatorFont">TEAMS</li>
-              <li class="lineUp liberatorFont">MATCH</li>
-              <li class="lineUp liberatorFont">CONTACTS</li>
-         </div>
-        </ul>
-       </nav>
+
+
+       <div style="position:relative; top:-75px; left:400px">
+         <button class="join-button liberatorFont" id="button">JOIN OUR TEAM</button>
+         <script src="index.js"></script>
+       </div>
+
+       <div id="navRight" style="position:relative; top:-153px; left:-50px">
+         <ul class="navButtons">
+        <li class="lineUp liberatorFont"><a href="index.html">HOME</a></li>
+         <li class="lineUp liberatorFont">WATCH</li>
+         <li class="lineUp liberatorFont"><a href="teams.html">TEAMS</a></li>
+         <li class="lineUp liberatorFont">MATCH</li>
+         <li class="lineUp liberatorFont">CONTACT</li>
        </div>
    </header>
 
@@ -83,7 +82,33 @@
            Campus Main Phone: <a href="tel:9162786011" class="numberHref">(916)278-6011 </a>
        </p>
     </footer>
+    <!-- Modal Section -->
+ <div class="bg-modal">
+  <div class="modal-content">
+  <h2>Inquiry to join a team</h2>
+  <form action="">
+      <div class="close" id="close">+</div>
+      <script src="seniorProject/Component.js"></script>
+
+      <input type="text" placeholder="First name">
+      <input type="text" placeholder="Last name">
+      <input type="email" placeholder="Student E-mail">
+      <input type="text" style="height: 50px" placeholder="Tell us about yourself">
+
+      <!-- Drop list for Inquiry Form -->
+      <select class="Game type">
+          <option disabled selected value>Pick a team</option>
+          <option value="LOL">Leage of Legends</option>
+          <option value="Overwatch">Overwatch</option>
+          <option value="Vanguard">Vanguard</option>
+          <option value="RocketLeague">Rocket League</option>
+          <option value="CSGO">CSGO</option>
+      </select>
+      <a href="" class="button">Submit</a>
+  </form>
   </div>
+</div>
+
 
 </body>
 </html>
