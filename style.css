@@ -1,26 +1,38 @@
 body, html{
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-
-}
-.border{
-    background: rgb(195, 182, 129);
-    height: 100px;
-    width: 1264px;
     margin: 0;
     padding: 0;
-    display: inline;
+    overflow-x: hidden; 
+    min-width: 320px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+    background: rgb(195, 182, 129);
+    height: 6.7rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+  display: inline;
+}
+
+.navButtons:hover{
+  opacity: 0.7;
 }
 
 .background-image{
   background-image: url('./images/background_color.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height:100vh;
+  margin: 0;
+  padding: 0;
 }
-
 .center{
   display: block;
   margin-left: auto;
@@ -32,12 +44,24 @@ body, html{
     width: 320px;
     height: 106.75px;
     align-items: left;
+    float: left;
+    padding-right: 0;
+    margin-right: 0;
 }
 
+
 .homeImg{
-    width: 1264px;
-    height: 443;
-    position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+#text-container{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 2rem;
 }
 
 .logoSac{
@@ -71,35 +95,56 @@ body, html{
     color: rgb(3,76,56);
 }
 body{
-    background: rgb(241,241,241);
-}
-.nav-container{
-    display: inline;
+  background: rgb(241,241,241);
 }
 
 a{
-    color:rgb(3,76,56);
-    text-decoration: none;
-    cursor: pointer;
+  color:rgb(3,76,56);
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+.event:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
 }
 
 .join-button{
-    background:white;
-    border: none;
-    display: inline;
-    border-radius: 10px;
-    cursor: pointer;
-    color: rgb(0,78,56);
-    text-align: center;
-    padding: 13px;
-    font-size: 15px;
+  background:white;
+  border: none;
+  display: inline;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(0,78,56);
+  padding: 0.6rem;
+  padding-left: 0.4rem;
+  padding-bottom: 0.8rem;
+  font-size: 15px;
+  margin-right: 0.2rem;
+  align-items: left;
 }
+
+.join-button:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.nav{
+  position: relative;
+  float:right;
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+}
+
 .navButtons{
     text-align: right;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    color: black;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    padding-top: 0.8rem;
+    width: 20%;
 }
 
 #navRight{
@@ -117,9 +162,9 @@ a{
 .footInfo{
     color: white;
     font-size: large;
-    padding-top: 20px;
     float: right;
     padding-right: 5%;
+    padding-top: 2rem;
 }
 
 .numberHref{
@@ -142,6 +187,7 @@ h1{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .liberatorFont{
@@ -149,6 +195,14 @@ h1{
   font-size: 22px;
   font-family: liberator;
   text-align: center;
+}
+
+.match-title{
+  color: rgb(0, 78, 56);
+  font-size: 3rem;
+  font-family: liberator;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .liberatorFontLarge{
@@ -177,18 +231,151 @@ h1{
   src: url('fonts/Liberator.ttf');
   font-family: liberator;
 }
-.twitter-container{
-    padding-left: 20%;
-    padding-top: 2%;
-    padding-bottom: 150px;
+
+.aside-container{
+  width: 100%;
+  height: 40rem;
+  margin-top: 3rem;
 }
+
+/* For twiter container */
+.twitter-container{
+  margin-left: 6rem;
+  margin-bottom: 3rem;
+  width: 30%;
+  position: relative;
+  float:left;
+}
+
+/*For match page event list */
+.container-matches{
+  margin: 0;
+  align-items: center;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+}
+
+/*Resize the game images correctly*/
+.game-image-resize{
+  position:relative;
+  width: 3%;
+}
+
+/*image list conrtainer */
+.list-images{
+  text-align: center;
+  margin: 2rem;
+}
+
+.game-list-image:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.game-list-image{
+  position: relative;
+  width: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.main-container{
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 3rem;
+  height: auto;
+  padding: 0;
+  align-items: center;
+}
+
+/* For the event list */
+.event-container{
+  width: 50%;
+  float: right;
+  margin: 0 auto;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.event-container h3.year {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid rgb(0, 78, 56);
+}
+
+.event-container .event {
+  box-shadow: 0 0.3rem 1rem -0.6rem rgba(0,0,0, 0.6);
+  display: flex;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  
+}
+
+.container-matches .event {
+  box-shadow: 0 0.3rem 1rem -0.6rem rgba(0,0,0, 0.6);
+  display: flex;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.event .event-left{
+  background-color: #222;
+  min-width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 0.7rem 3rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.event .event-left .date{
+  font-size: 3rem;
+}
+
+.event .event-left .month{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.event .event-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.4rem;
+}
+
+.event .event-right h3.event{
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.8rem 0;
+  color: #218bbb;
+  text-transform: uppercase;
+}
+
+.event .event-right .event-timing{
+  background-color: #fff8ba;
+  display: flex;
+  align-items: center;
+  width: 4rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.9rem; 
+}
+
 .footer-container{
   background:black;
+  bottom: 0;
   position: relative;
-  height: 125px;
-  margin-top: -100px;
-  clear: both;
-  text-align: left;
+  height: 7.5rem;
+  clear:both;
+  border-top: 0.3rem outset rgba(20, 20, 19, 0.9);
 }
 
 
@@ -280,4 +467,18 @@ input, select{
 .teamimg {
   max-width: 100%;
   height: auto;
+}
+
+/* For large devices */
+@media only screen and (min-width: 1020px) {
+  
+}
+
+/* For medium size devices */
+@media only screen and (max-width: 1020px) and (min-width: 420px){
+
+}
+/* For mobile devices */
+@media only screen and (max-width: 420px){
+
 }

@@ -3,50 +3,465 @@
     <link href='style.css' rel='stylesheet'>
   </head>
 
-<body>
-  <style>
-    .background-image{
-      background-image: url('./images/background_color.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      height:100vh;
-    }
-  </style>
+  <body class="background-image">
 
-<header class="border center">
-  <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
+    <!-- Header-->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
 
-  <div style="position:relative; top:-75px; left:400px">
-    <button class="join-button liberatorFont" id="button">JOIN OUR TEAM</button>
-    <script src="index.js"></script>
-  </div>
+      <div class="nav liberatorFont">
+       <nav>
+         <ul>
+            <!-- Nav Links -->
+            <li><a href="index.html" class="navButtons">HOME</a></li>
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="teams.html" class="navButtons">TEAMS</a></li>
+            <li><a href="about.html" class="navButtons">ABOUT</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-  <div id="navRight" style="position:relative; top:-153px; left:-50px">
-    <ul class="navButtons">
-    <li class="lineUp liberatorFont">WATCH</li>
-    <li class="lineUp liberatorFont">TEAMS</li>
-    <li class="lineUp liberatorFont">MATCH</li>
-    <li class="lineUp liberatorFont"><a href="about.html">ABOUT</a></li>
-    <li class="lineUp liberatorFont">CONTACTS</li>
-  </div>
-       </ul>
+    <h3 class="match-title"> Upcoming matches for spring 2022 </h3>
+
+    <!-- List of front images -->
+    <div class="list-images">
+       <a href="#valorant-matches"></a><img src="images/valorant.png" class="game-list-image" alt="valorant image"></a>
+       <a href="#halo-matches"><img src="images/Halo.png" class="game-list-image" alt="halo image"></a>
+       <a href="#rocketleague-matches"><img src="images/rocketleague.png" class="game-list-image" alt="rocketleague image"></a>
+       <a href="#leagueoflegends-matches"><img src="images/leagueoflegends.png" class="game-list-image" alt="leagueoflegends image"></a>
+       <a href="#overwatch-matches"><img src="images/overwatch.png" class="game-list-image" alt="overwatch image"></a>
+       <a href="#ssbu-matches"><img src="images/ssb.png" class="game-list-image" alt="super smash bros. image"></a>
+    </div>
+
+
+   <main class="main-container">
+   <!-- Container for Valorant list -->
+   <div class="container-matches">
+    <h3 class="year liberatorFontLarge" id="valorant-matches"> Valorant <img src="images/valorant.png" class="game-image-resize" alt="Valorant image"> </h3>
+     <!-- The first listed event -->
+     <div class="event">
+       <div class="event-left">
+            <div class="event-date">
+           <div class="date">3</div>
+           <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+         <h3 class="event-title">Sacramento Vs Fresno </h3>
+
+        <div class="event-description">
+           This is the description of the event.
+         </div>
+
+        <div class="event-timing">
+          10:10am
+        </div>
+
        </div>
-     </nav>
-  </header>
+    </div>
 
-  <h1 class = "liberatorFontLarge" style="padding-top: 20px;"> Support us during our Matches: </h1>
-   <p class="coverPageFont maxWidth1 center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
-        <br>
-   </p>
+    <!-- The second listed event -->
+    <div class="event">
+      <div class="event-left">
+         <div class="event-date">
+           <div class="date">16</div>
+          <div class="month">Mar</div>
+        </div>
+      </div>
+
+       <div class="event-right">
+        <h3 class="event-title">Sacramento Vs Davis</h3>
+
+        <div class="event-description">
+          This is the description of the event.
+        </div>
+
+        <div class="event-timing">
+           12:00pm
+        </div>
+      </div>
+    </div>
+
+    <!-- The third listed event -->
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">23</div>
+         <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+       <h3 class="event-title">Sacramento Vs Berkley</h3>
+
+       <div class="event-description">
+         This is the description of the event.
+       </div>
+
+       <div class="event-timing">
+          12:00pm
+       </div>
+      </div>
+    </div>
   </div>
 
+  <!-- Container for halo list -->
+  <div class="container-matches" id="halo-matches">
+    <h3 class="year liberatorFontLarge"> Halo <img src="images/halo.png" class="game-image-resize" alt="Halo image"> </h3>
+     <!-- The first listed event -->
+     <div class="event">
+       <div class="event-left">
+            <div class="event-date">
+           <div class="date">3</div>
+           <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+         <h3 class="event-title">Sacramento Vs Fresno </h3>
+        <div class="event-description">
+           This is the description of the event.
+         </div>
+
+        <div class="event-timing">
+          10:10am
+        </div>
+
+       </div>
+    </div>
+
+    <!-- The second listed event -->
+    <div class="event">
+      <div class="event-left">
+         <div class="event-date">
+           <div class="date">16</div>
+          <div class="month">Mar</div>
+        </div>
+      </div>
+
+       <div class="event-right">
+        <h3 class="event-title">Sacramento Vs Davis</h3>
+
+        <div class="event-description">
+          This is the description of the event.
+        </div>
+
+        <div class="event-timing">
+           12:00pm
+        </div>
+      </div>
+    </div>
+
+    <!-- The third listed event -->
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">23</div>
+         <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+       <h3 class="event-title">Sacramento Vs Berkley</h3>
+
+       <div class="event-description">
+         This is the description of the event.
+       </div>
+
+       <div class="event-timing">
+          12:00pm
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container for event list -->
+  <div class="container-matches">
+    <h3 class="year liberatorFontLarge" id="rocketleague-matches"> Rocket League <img src="images/rocketleague.png" class="game-image-resize" alt="Rocekt Leage image"> </h3>
+     <!-- The first listed event -->
+     <div class="event">
+       <div class="event-left">
+            <div class="event-date">
+           <div class="date">3</div>
+           <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+         <h3 class="event-title">Sacramento Vs Fresno </h3>
+
+        <div class="event-description">
+           This is the description of the event.
+         </div>
+
+        <div class="event-timing">
+          10:10am
+        </div>
+
+       </div>
+    </div>
+
+    <!-- The second listed event -->
+    <div class="event">
+      <div class="event-left">
+         <div class="event-date">
+           <div class="date">16</div>
+          <div class="month">Mar</div>
+        </div>
+      </div>
+
+       <div class="event-right">
+        <h3 class="event-title">Sacramento Vs Davis</h3>
+
+        <div class="event-description">
+          This is the description of the event.
+        </div>
+
+        <div class="event-timing">
+           12:00pm
+        </div>
+      </div>
+    </div>
+
+    <!-- The third listed event -->
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">23</div>
+         <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+       <h3 class="event-title">Sacramento Vs Berkley</h3>
+
+       <div class="event-description">
+         This is the description of the event.
+       </div>
+
+       <div class="event-timing">
+          12:00pm
+       </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Container for halo list -->
+   <div class="container-matches">
+    <h3 class="year liberatorFontLarge" id="leagueoflegends-matches"> League of Legends <img src="images/leagueoflegends.png" class="game-image-resize" alt="League of Legends image"> </h3>
+     <!-- The first listed event -->
+     <div class="event">
+       <div class="event-left">
+            <div class="event-date">
+           <div class="date">3</div>
+           <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+         <h3 class="event-title">Sacramento Vs Fresno </h3>
+        <div class="event-description">
+           This is the description of the event.
+         </div>
+
+        <div class="event-timing">
+          10:10am
+        </div>
+
+       </div>
+    </div>
+
+    <!-- The second listed event -->
+    <div class="event">
+      <div class="event-left">
+         <div class="event-date">
+           <div class="date">16</div>
+          <div class="month">Mar</div>
+        </div>
+      </div>
+
+       <div class="event-right">
+        <h3 class="event-title">Sacramento Vs Davis</h3>
+
+        <div class="event-description">
+          This is the description of the event.
+        </div>
+
+        <div class="event-timing">
+           12:00pm
+        </div>
+      </div>
+    </div>
+
+    <!-- The third listed event -->
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">3</div>
+         <div class="month">Apr</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+       <h3 class="event-title">Sacramento Vs Berkley</h3>
+
+       <div class="event-description">
+         This is the description of the event.
+       </div>
+
+       <div class="event-timing">
+          12:00pm
+       </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Container for halo list -->
+   <div class="container-matches">
+    <h3 class="year liberatorFontLarge" id="overwatch-matches"> Overwatch <img src="images/overwatch.png" class="game-image-resize" alt="Rocket Leage Image"> </h3>
+     <!-- The first listed event -->
+     <div class="event">
+       <div class="event-left">
+            <div class="event-date">
+           <div class="date">3</div>
+           <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+         <h3 class="event-title">Sacramento Vs Fresno </h3>
+        <div class="event-description">
+           This is the description of the event.
+         </div>
+
+        <div class="event-timing">
+          10:10am
+        </div>
+
+       </div>
+    </div>
+
+    <!-- The second listed event -->
+    <div class="event">
+      <div class="event-left">
+         <div class="event-date">
+           <div class="date">16</div>
+          <div class="month">Mar</div>
+        </div>
+      </div>
+
+       <div class="event-right">
+        <h3 class="event-title">Sacramento Vs Davis</h3>
+
+        <div class="event-description">
+          This is the description of the event.
+        </div>
+
+        <div class="event-timing">
+           12:00pm
+        </div>
+      </div>
+    </div>
+
+    <!-- The third listed event -->
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">23</div>
+         <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+       <h3 class="event-title">Sacramento Vs Berkley</h3>
+
+       <div class="event-description">
+         This is the description of the event.
+       </div>
+
+       <div class="event-timing">
+          12:00pm
+       </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Container for super smash bros list -->
+   <div class="container-matches">
+    <h3 class="year liberatorFontLarge" id="ssbu-matches"> Super Smash Bros. Ultimate <img src="images/ssb.png" class="game-image-resize" alt="Super Smash Bros. image"> </h3>
+     <!-- The first listed event -->
+     <div class="event">
+       <div class="event-left">
+            <div class="event-date">
+           <div class="date">3</div>
+           <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+         <h3 class="event-title">Sacramento Vs Monterey </h3>
+        <div class="event-description">
+           This is the description of the event.
+         </div>
+
+        <div class="event-timing">
+          11:10am
+        </div>
+
+       </div>
+    </div>
+
+    <!-- The second listed event -->
+    <div class="event">
+      <div class="event-left">
+         <div class="event-date">
+           <div class="date">05</div>
+          <div class="month">Mar</div>
+        </div>
+      </div>
+
+       <div class="event-right">
+        <h3 class="event-title">Sacramento Vs Davis</h3>
+
+        <div class="event-description">
+          This is the description of the event.
+        </div>
+
+        <div class="event-timing">
+           2:00pm
+        </div>
+      </div>
+    </div>
+
+    <!-- The third listed event -->
+    <div class="event">
+      <div class="event-left">
+        <div class="event-date">
+          <div class="date">23</div>
+         <div class="month">Mar</div>
+        </div>
+      </div>
+
+      <div class="event-right">
+       <h3 class="event-title">Sacramento Vs Berkley</h3>
+
+       <div class="event-description">
+         This is the description of the event.
+       </div>
+
+       <div class="event-timing">
+          12:00pm
+       </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+    <!-- Footer container -->
     <footer class = "footer-container">
         <img src="images/sacState.png" class="logoSac" atl="sacState logo">
 
