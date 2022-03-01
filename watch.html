@@ -36,6 +36,21 @@
 
   <img src="images/twitchholder.jpg" style = "position:relative; top:-110px; margin-bottom: -55px" class="homeImg center" alt="Cover page" >
 
+
+
+<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "monstercat"
+  });
+</script>
+
   <h1 class = "liberatorFontLarge" style="padding-top: 20px;"> Want to watch us play? </h1>
    <p class="coverPageFont maxWidth1 center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna

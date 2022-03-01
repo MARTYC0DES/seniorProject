@@ -469,16 +469,58 @@ input, select{
   height: auto;
 }
 
-/* For large devices */
-@media only screen and (min-width: 1020px) {
-  
+/*Splits screen into two sections*/
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+
 }
 
-/* For medium size devices */
-@media only screen and (max-width: 1020px) and (min-width: 420px){
-
+.left{
+  left: 0;
 }
-/* For mobile devices */
-@media only screen and (max-width: 420px){
 
+.right{
+  right: 0;
+}
+/*Creates a center border for splitting screen*/
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*Form input text elements*/
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize:none;
+}
+
+/*Style for submit button on contact page*/
+input[type=submit] {
+  background-color: black;
+  color:white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Form container*/
+.formContainer {
+  border-radius: 5px;
+  padding: 20px;
 }

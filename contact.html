@@ -39,25 +39,43 @@
          </div>
      </header>
 
-     <h1 class = "liberatorFontXLarge" style="padding-top: 20px;"> Contact Us </h1>
-     <p class ="liberatorFont maxWidth1 right">
-       <br>Sean Tirado
-       <br>Email: Seantirado@csus.edu
-       <br>Phone:(209)-627-8804
-     </p>
-     <p class ="liberatorFont maxWidth1 left"><a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png">Twitter </a> <a href><img class="facebook-resize" src="images/Facebook-logo.png"> Facebook </a></p>
-     <p class ="liberatorFont maxWidth1 left"><a href="https://www.instagram.com/esportssacstate/"><img class="social-resize" src="images/instagram.png"> Instagram </a> <a href><img class="social-resize" src="images/discord-mascot.png"> Discord </a></p>
+     <div class ="center">
+       <h1 class ="liberatorFont center" style="padding-top : 40px;">Contact Us</h1>
+     </div>
 
-     <form>
-       <p class="liberatorFont maxWidth1 left">
-      <label>Name: <input type="text"></label>
-      <label>Email: <input type="text"></label>
-      <label>Message:<input type="text"></label>
-      <input type="submit" value="Submit">
-      </p>
-     </form>
-    
-     
+     <div class = "split left">
+       <div class = "centered">
+        <div class = "formContainer">
+          <form action="contact.html">
+            <label for = "fname">First Name</label>
+            <input type ="text" id="fname" name="firstname" placeholder="Your Name...">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+
+            <label for="email">Email</label>
+            <input type="text" id="emailAddress" name="emailAddress">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Enter Message..." style ="height:200px"></textarea>
+            <input type="submit" value ="Submit">
+          </form>
+        </div>
+       </div>
+     </div>
+
+     <div class ="split right">
+       <div class = "centered" >
+        <p class ="liberatorFont maxWidth1 right">
+          <br>Sean Tirado
+          <br>Email: Seantirado@csus.edu
+          <br>Phone:(209)-627-8804
+        </p>
+        <p class ="liberatorFont maxWidth1 left"><a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png">Twitter </a> <a href><img class="facebook-resize" src="images/Facebook-logo.png"> Facebook </a></p>
+        <p class ="liberatorFont maxWidth1 left"><a href="https://www.instagram.com/esportssacstate/"><img class="social-resize" src="images/instagram.png"> Instagram </a> <a href><img class="social-resize" src="images/discord-mascot.png"> Discord </a></p>   
+       </div>
+     </div>
+
      <footer class = "center">
         <div style="position:relative; top:375px" class="footer-container">
           <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
