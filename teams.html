@@ -1,77 +1,39 @@
-<!-- DOCTYPE html-->
 <html>
-<head>
   <head>
-    <title>CSUS Esports</title>
     <link href='style.css' rel='stylesheet'>
   </head>
 
-<body class="background-image">
+  <body class="background-image">
 
+    <!-- Header-->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
 
-</head>
-
-<body>
-  <style>
-    .background-image{
-      background-image: url('./images/background_color.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      height:100vh;
-    }
-  </style>
-
-   <header class="border center">
-      <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
-
-      <div style="position:relative; top:-75px; left:400px">
-
-        <button class="join-button liberatorFont" id="button">JOIN OUR TEAM</button>
-        <script src="index.js"></script>
+      <div class="nav liberatorFont">
+       <nav>
+         <ul>
+            <!-- Nav Links -->
+            <li><a href="index.html" class="navButtons">HOME</a></li>
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="match.html" class="navButtons">MATCH</a></li>
+            <li><a href="about.html" class="navButtons">ABOUT</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
 
-      <div id="navRight" style="position:relative; top:-153px; left:-50px">
-        <ul class="navButtons">
-        <li class="lineUp liberatorFont">WATCH</li>
-        <li class="lineUp liberatorFont"><a href="teams.html">TEAMS</a></li>
-        <li class="lineUp liberatorFont">MATCH</li>
-        <li class="lineUp liberatorFont"><a href="about.html">ABOUT</a></li>
-        <li class="lineUp liberatorFont">CONTACTS</li>
-      </div>
+    <h3 class="match-title"> csus Teams and players  </h3>
 
-
-
-      <div style="position:relative; top:-648px; left:850px">
-        <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
-        <a href="https://www.instagram.com/esportssacstate/"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
-        <a href=""><img class="facebook-resize" src="images/Facebook-logo.png"  alt="facebook logo"></a>
-        <a href="#"><img class="social-resize" src="images/discord-mascot.png"  alt="discord logo"></a>
-        </ul>
-      </div>
-   </header>
-
-
-
-<div class="row">
-  <div class="column">
-    <img src="images/leagueoflegends.png" alt="LoL" style="width:20%; position:relative; left:190px; top: -18px">
-  </div>
-  <div class="column">
-    <img src="images/valorant.png" alt="Valorant" style="width:16%; position:relative; left: -100px; top:-85px">
-  </div>
-  <div class="column">
-    <img src="images/overwatch.png" alt="Overwatch" style="width:15%; position:relative; left: -390px; top:-80px">
-  </div>
-  <div class="column">
-    <img src="images/rocketleague.png" alt="Rocket League" style="width:20%; position:relative; left:-200px; top: -160px; margin-bottom: -800px">
-  </div>
-  <div class="column">
-    <img src="images/Halo.png" alt="Halo" style="width:15%; position:relative; left: 20px; top:-155px; margin-bottom: -1500px">
-  </div>
-  <div class="column">
-    <img src="images/ssb.png" alt="Super Smash Bros" style="width:16%; position:relative; left: 200px; top:-150px; margin-bottom: -800px">
-  </div>
-</div>
+    <!-- List of front images -->
+    <div class="list-images">
+       <a href="#valorant-matches"></a><img src="images/valorant.png" class="game-list-image" alt="valorant image"></a>
+       <a href="#halo-matches"><img src="images/Halo.png" class="game-list-image" alt="halo image"></a>
+       <a href="#rocketleague-matches"><img src="images/rocketleague.png" class="game-list-image" alt="rocketleague image"></a>
+       <a href="#leagueoflegends-matches"><img src="images/leagueoflegends.png" class="game-list-image" alt="leagueoflegends image"></a>
+       <a href="#overwatch-matches"><img src="images/overwatch.png" class="game-list-image" alt="overwatch image"></a>
+       <a href="#ssbu-matches"><img src="images/ssb.png" class="game-list-image" alt="super smash bros. image"></a>
+    </div>
 
 
 <div>
@@ -80,12 +42,25 @@
 
 
 <div>
-<img src="images/DDayLAN.png" style= "float:left; position:relative; left: 170px;" alt="DDay" height="300" width="300">
-<p class = liberatorFontLarge>DDay</p>
-<p class = liberatorFont>Position: Main Tank - Heroes: Reinhardt, Orisa</p>
-<p style="position:relative; left:220px" class = "liberatorFont maxWidth1"> DDay is a washed OW player. He is stuck in Reinhardtjail and ocassionally will hit some fatty shatty's. When he is not getting fatty shatty's he is constantly feeding.
-Somehow Sacramento state wanted him as the main tank for their overwatch team. - this is just a joke example bio.</p>
+<img src="images/DDayLAN.png" style= "float:left; position:relative; left: 13%;" alt="DDay" height="300" width="300">
+<p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+  <span class = "liberatorFontLarge"> dday <br></span>
+  Daniel Sagredos<br><br>
+  Position: Main Tank - Heroes: Reinhardt, Orisa <br><br>
+    DDay is a washed OW player. He is stuck in Reinhardtjail and ocassionally will hit some fatty shatty's.
+    When he is not getting fatty shatty's he is constantly feeding. Somehow Sacramento state wanted him as 
+    the main tank for their overwatch team.<br><br><br><br><br><br><br></p>
 </div>
+
+<div>
+  <img src="images/omi.png" style= "float:left; position:relative; left: 13%;" alt="Omi" height="300" width="300">
+  <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;" class = "liberatorFont center"> 
+    <span class = "liberatorFontLarge"> omi <br></span>
+    Harish Kandaswamy<br><br>
+    Position: DPS - Heroes: Widowmaker, Cassidy <br><br>
+      Omi is Sacramento state's hard carry. The team name should be renamed omi and the noobs. While we feed,
+      omi doinks their whole team with head shots. if only we had six omi's, we would have a winning record.<br><br><br><br><br><br><br></p>
+  </div>
 
 
 

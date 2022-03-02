@@ -4,46 +4,31 @@
     <link href='style.css' rel='stylesheet'>
   </head>
 
-<body>
+  <body class="background-image">
 
-   <style>
-     .background-image{
-       background-image: url('./images/background_color.png');
-       background-size: cover;
-       background-repeat: no-repeat;
-       height:100vh;
-     }
-   </style>
+    <!-- Header-->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
 
-   <header class="border center">
-       <title>CSUS Esports</title>
-       <div>
+      <div class="nav liberatorFont">
        <nav>
-       <div style="position:relative; top:-4px; left:-30px">
-       <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
+         <ul>
+            <!-- Nav Links -->
+            <li><a href="index.html" class="navButtons">HOME</a></li>
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="teams.html" class="navButtons">TEAMS</a></li>
+            <li><a href="match.html" class="navButtons">MATCH</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
 
-       <div style="position:relative; top:-75px; left:400px">
-         <button class="join-button liberatorFont" id="button">JOIN OUR TEAM</button>
-         <script src="index.js"></script>
-       </div>
-
-       <div id="navRight" style="position:relative; top:-153px; left:-50px">
-         <ul class="navButtons">
-        <li class="lineUp liberatorFont"><a href="index.html">HOME</a></li>
-         <li class="lineUp liberatorFont">WATCH</li>
-         <li class="lineUp liberatorFont"><a href="teams.html">TEAMS</a></li>
-         <li class="lineUp liberatorFont">MATCH</li>
-         <li class="lineUp liberatorFont">CONTACT</li>
-       </div>
-   </header>
-
-   <div class="background-image">
-
-   <img src="images/aboutEsports.png" style = "position:relative; top:-110px; margin-bottom: -55px" class="homeImg center" alt="Cover page" >
+   <img src="images/aboutEsports.png" style="max-width:1100px; padding-top: 20px " class="homeImg center" alt="Cover page" >
 
 
-   <h1 class = "liberatorFontXLarge" style="padding-top: 20px;"> What is Esports? </h1>
+   <h1 class = "liberatorFontXLarge" style="padding-top: 20px"> What is Esports?<br><br>  </h1>
    <p class="liberatorFont maxWidth1 center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -66,7 +51,7 @@
         elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
-        <br>
+        <br><br><br><br><br>
    </p>
   </div>
 
@@ -75,13 +60,20 @@
 
 
 
-    <footer class = "center">
-        <div style="position:relative; top:375px" class="footer-container">
-        <p class="footInfo"> <img src="images/sacState.png" style="position:relative; left:-650px; top:-35px; margin-bottom:-50px" class="logoSac" atl="sacState logo">California State University, Sacramento <br>
-           6000 J Street, Sacramento, CA 95819 <br>
-           Campus Main Phone: <a href="tel:9162786011" class="numberHref">(916)278-6011 </a>
-       </p>
-    </footer>
+  <footer class = "footer-container">
+    <img src="images/sacState.png" class="logoSac" atl="sacState logo">
+
+    <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
+    <a href="https://www.instagram.com/esportssacstate/"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
+    <a href=""><img class="facebook-resize" src="images/Facebook-logo.png"  alt="facebook logo"></a>
+    <a href="#"><img class="social-resize" src="images/discord-mascot.png"  alt="discord logo"></a>
+
+    <p class="footInfo">
+     California State University, Sacramento <br>
+     6000 J Street, Sacramento, CA 95819 <br>
+     Campus Main Phone: <a href="tel:9162786011" class="numberHref">(916)278-6011 </a>
+    </p>
+</footer>
     <!-- Modal Section -->
  <div class="bg-modal">
   <div class="modal-content">
