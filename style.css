@@ -514,6 +514,13 @@ input[type=submit] {
 
 /*Form container*/
 .formContainer {
+<<<<<<< Updated upstream
 	border-radius: 5px;
 	padding: 20px;
 }
+=======
+  border-radius: 5px;
+  padding: 20px;
+}
+
+>>>>>>> Stashed changes
