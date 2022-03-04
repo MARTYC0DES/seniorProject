@@ -464,30 +464,27 @@ select {
 	height: auto;
 }
 
-/*Splits screen into two sections*/
-.split {
-	height: 100%;
-	width: 50%;
-	position: relative;
-	z-index: 1;
-	top: 0;
-	overflow-x: hidden;
-	padding-top: 20px;
-}
-
 .left {
-	left: 0;
+	margin-left: 6rem;
+	margin-bottom: 3rem;
+	width: 30%;
+	position: relative;
+	float: left;
 }
-
+/* For contact information and social media link container*/
 .right {
-	right: 0;
+	margin: 0;
+	align-items: center;
+	margin-right: 5rem;
+	margin-left: 5rem;
+	margin-bottom: 3rem;
 }
 /*Creates a center border for splitting screen*/
 .centered {
-	position: absolute;
+	position: relative;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	left: 20%;
+	transform: translate(auto, auto);
 	text-align: center;
 }
 
