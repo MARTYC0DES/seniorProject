@@ -1,48 +1,35 @@
-<<!-- DOCTYPE html-->
+<!-- DOCTYPE html-->
 <html>
-    <head>
-      <link href='style.css' rel='stylesheet'>
-    </head>
-  
-  <body>
-  
-     <style>
-       .background-image{
-         background-image: url('./images/background_color.png');
-         background-size: cover;
-         background-repeat: no-repeat;
-         height:100vh;
-       }
-       h1{text-align: center;}
-     </style>
-  
-     <header class="border center">
-         <title>CSUS Esports</title>
-         <div>
-         <nav>
-         <div style="position:relative; top:-4px; left:-30px">
-         <img src="images/esports.png" class="esportsLogo" alt="Esports logo" >
-  
-  
-         <div style="position:relative; top:-75px; left:400px">
-           <button class="join-button liberatorFont" id="button">JOIN OUR TEAM</button>
-           <script src="index.js"></script>
-         </div>
-  
-         <div id="navRight" style="position:relative; top:-153px; left:-50px">
-           <ul class="navButtons">
-          <li class="lineUp liberatorFont"><a href="index.html">HOME</a></li>
-           <li class="lineUp liberatorFont"><a href="watch.html">WATCH</a></li>
-           <li class="lineUp liberatorFont"><a href="teams.html">TEAMS</a></li>
-           <li class="lineUp liberatorFont"><a href="match.html">MATCH</a></li>
-           <li class="lineUp liberatorFont"><a href="about.html">ABOUT</a></li>
-         </div>
-     </header>
+  <head>
+    <link href='style.css' rel='stylesheet'>
+  </head>
 
+  <body class="background-image">
+
+    <!-- Header-->
+    <div class="header">
+      <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
+
+      <div class="nav liberatorFont">
+       <nav>
+         <ul>
+            <!-- Nav Links -->
+            <li><a href="index.html" class="navButtons">HOME</a></li>
+            <li><a href="watch.html" class="navButtons">WATCH</a></li>
+            <li><a href="teams.html" class="navButtons">TEAMS</a></li>
+            <li><a href="about.html" class="navButtons">ABOUT</a></li>
+            <li><a href="contact.html" class="navButtons">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--
      <div class ="center">
        <h1 class ="liberatorFont center" style="padding-top : 40px;">Contact Us</h1>
-     </div>
+     </div> --> 
 
+     <!--Left Contact Container -->
      <div class = "split left">
        <div class = "centered">
         <div class = "formContainer">
@@ -64,6 +51,7 @@
        </div>
      </div>
 
+     <!--Right Contact Container-->
      <div class ="split right">
        <div class = "centered" >
         <p class ="liberatorFont maxWidth1 right">
@@ -76,17 +64,21 @@
        </div>
      </div>
 
-     <footer class = "center">
-        <div style="position:relative; top:375px" class="footer-container">
-          <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
-          <a href="https://www.instagram.com/esportssacstate/"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
-          <a href=""><img class="facebook-resize" src="images/Facebook-logo.png"  alt="facebook logo"></a>
-          <a href="#"><img class="social-resize" src="images/discord-mascot.png"  alt="discord logo"></a>
-        <p class="footInfo"> <img src="images/sacState.png" style="position:relative; left:-650px; top:-35px; margin-bottom:-50px" class="logoSac" atl="sacState logo">California State University, Sacramento <br>
-           6000 J Street, Sacramento, CA 95819 <br>
-           Campus Main Phone: <a href="tel:9162786011" class="numberHref">(916)278-6011 </a>
-       </p>
+    <!-- Footer container -->
+    <footer class = "footer-container">
+      <img src="images/sacState.png" class="logoSac" atl="sacState logo">
+
+      <a href="https://twitter.com/esports_sac"><img class="social-resize" src="images/twitter-logo.png"  alt="twitter logo"></a>
+      <a href="https://www.instagram.com/esportssacstate"><img class="social-resize" src="images/instagram.png"  alt="instagram logo"></a>
+      <a href=""><img class="facebook-resize" src="images/Facebook-logo.png"  alt="facebook logo"></a>
+      <a href="#"><img class="social-resize" src="images/discord-mascot.png"  alt="discord logo"></a>
+
+      <p class="footInfo">
+       California State University, Sacramento <br>
+       6000 J Street, Sacramento, CA 95819 <br>
+       Campus Main Phone: <a href="tel:9162786011" class="numberHref">(916)278-6011 </a>
+      </p>
     </footer>
 
-    </body>
+</body>
 </html>
