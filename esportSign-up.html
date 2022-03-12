@@ -1,36 +1,78 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Firebase Authentication</title>
-<link rel="stylesheet" href="cssFile.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sports club Sign-up</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
-<div id="login-box">
-  <div class="left">
-    <h1 id='status'>login</h1>
-	<input type="text" id="username" name="username" placeholder="username" />
-    <input type="text" id="email" name="email" placeholder="E-mail" />
-    <input type="password" id="password" name="password" placeholder="Password" />
-    
-    <input type="submit" id='sighUp' name="sighUp_submit" value="Sign up" />
+  <div class="container">
+    <h1 class="brand"><span>Sports</span> Club</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Sports club Sign-up</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> 4344 Something st</li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@sportsclub.test</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Biography</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" value="" id="name" required>
+          </p>
+          <p>
+            <label>Club ID/ Name</label>
+            <input type="text" name="company" value="" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" value="" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" value="" id="phone">
+          </p>
+          <p class="full">
+            <label>Biography</label>
+            <textarea name="biography" rows="5" id=""></textarea>
+          </p>
+          <p class="full">
+          <p>Click on the "Choose File" button to upload a picture:</p>
 
+          <action=" /action_page.php">
+            <input type="file" id="myFile" name="filename">
+
+            <button type="submit">Submit</button>
+            </p>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
-</body>
+  <script type="module">
 
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
-  import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+    import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    //yout config code
-	apiKey: "AIzaSyAqokPjgpp4dcdwZmXNRBXdaYvayaGGpyg",
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyAqokPjgpp4dcdwZmXNRBXdaYvayaGGpyg",
     authDomain: "senior-project-4f3bb.firebaseapp.com",
     databaseURL: "https://senior-project-4f3bb-default-rtdb.firebaseio.com",
     projectId: "senior-project-4f3bb",
@@ -38,43 +80,49 @@
     messagingSenderId: "160860532291",
     appId: "1:160860532291:web:01005a9de5c82beb162ef6",
     measurementId: "G-0BDYPJ0YY4"
-  };
+    };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const database = getDatabase(app);
-  const auth = getAuth();
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
 
- sighUp.addEventListener('click',(e) => {
+    document.getElementById('contactForm').addEventListener('submit', submitForm);
+    function submitForm(e) {
+      e.preventDefault();
+      var name = getInputVal('name');
+      var company = getInputVal('company');
+      var email = getInputVal('email');
+      var phone = getInputVal('phone');
+      var biography = getInputVal('biography');
+      savebiography(name, company, email, phone, biography);
+      document.querySelector('.alert').style.display = 'block';
+      setTimeout(function () {
+        document.querySelector('.alert').style.display = 'none';
+      }, 3000);
+      document.getElementById('contactForm').reset();
+    }
 
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
-  var username = document.getElementById('username').value;
+    async function savebiography(name, company, email, phone, biography) {
+      try {
+        const docRef = await addDoc(collection(db, "SportsClub"), {
+          name: name,
+          company: company,
+          email: email,
+          phone: phone,
+          biography: biography
+        });
+        location.replace("./cloudsecond-Page.html")
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+    }
 
-  createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-     // Signed in 
-      const user = userCredential.user;
-
-      set(ref(database, 'users/' + user.uid),{
-          username: username,
-          email: email
-      })
-
-      alert('user created!');
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-
-      alert(errorMessage);
-    // ..
-    });
-
-});
-
-
-</script>
+    function getInputVal(id) {
+      return document.getElementById(id).value;
+    }
+  </script>
+</body>
 
 </html>
