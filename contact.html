@@ -36,17 +36,14 @@
        <div class = "centered">
         <div class = "formContainer">
           <form action="contact.html">
-            <label for = "fname">First Name</label>
-            <input type ="text" id="fname" name="firstname" placeholder="Your Name...">
+            <label for = "fname">Name</label>
+            <input type ="text" id="name" name="name" placeholder="Your Name..." required>
             
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
-
             <label for="email">Email</label>
-            <input type="text" id="emailAddress" name="emailAddress">
+            <input type="text" id="emailAddress" name="emailAddress" placeholder = "Your Email..." required
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Enter Message..." style ="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Enter Message..." style ="height:200px" required></textarea>
             <input type="submit" value ="Submit">
           </form>
         </div>
@@ -56,6 +53,9 @@
      <!--Right Contact Container-->
      <div class ="right">
        <div class = "centered" >
+        <p class ="liberatorFont maxWidth1 right">
+          <br>Treasurer
+        </p>
         <p class ="liberatorFont maxWidth1 right">
           <br>Sean Tirado
           <br>Email: Seantirado@csus.edu
