@@ -517,3 +517,49 @@ input[type=submit] {
 	border-radius: 5px;
 	padding: 20px;
 }
+
+@media screen and (max-width: 480px ){
+	.height-fix{
+		height: 650px;
+	}
+
+	.header{
+		height: 19rem;
+	}
+
+	.join-button{
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+
+	.esportsLogo{
+		float: none;
+		align-items: none;
+		align-self: center;
+	}
+
+	.navButtons{
+		display: center;
+		width: 100%;
+		text-align: center;
+		padding-right: 6rem;
+		margin-top: 20px;
+		padding-left: 6rem;
+	}
+
+	.homeImg{
+		display: none;
+	}
+
+	.footer-container{
+		height: 19rem;
+	}
+
+	.footInfo{
+		display: inline-block;
+		align-self: center;
+		padding-right: 15%;
+	}
+
+}
+
