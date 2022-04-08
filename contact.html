@@ -35,16 +35,12 @@
      <div class = "left">
        <div class = "centered">
         <div class = "formContainer">
-          <form action="contact.html">
-            <label for = "fname">Name</label>
-            <input type ="text" id="name" name="name" placeholder="Your Name..." required>
+          <form id="contact-form" method="post" action="contact-action.php">
+            <input name ="name" type="text" class="form-control" placeholder="Your Name..." required>
             
-            <label for="email">Email</label>
-            <input type="text" id="emailAddress" name="emailAddress" placeholder = "Your Email..." required
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Enter Message..." style ="height:200px" required></textarea>
-            <input type="submit" value ="Submit">
+            <input name ="email" type="text" class="form-control" placeholder="Email..." required>
+            <textarea name="subject" class="form-control" placeholder="Enter Message..." style ="height:200px" required></textarea>
+            <input type="submit" class="form-control submit" value ="Submit">
           </form>
         </div>
        </div>
