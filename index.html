@@ -46,56 +46,33 @@
       </div>
 
       <div class="mySlides fade">
-        <img src="images/home2.png" style="width:100%">
+        <img src="images/home2.png" class="homeImg">
       </div>
 
       <div class="mySlides fade">
-        <img src="images/homeImage.jpg" style="width:100%">
+        <img src="images/home4.png" class="homeImg">
       </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
+    <hr/>
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
 
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
       }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 6000); // Change image every 6 seconds
+    }
+  </script>
+  
   <!-- End of slide cotnainer -->
-
    <div id = "text-container">
      <h1 class = "liberatorFontLarge center"> INTERSTED IN ESPORTS? </h1>
      <p class="coverPageFont maxWidth1 center">
@@ -241,18 +218,20 @@
  </body>
 
     <!-- Modal Section -->
-  <div class="bg-modal">
+  <div class="bg-modal" id="modal">
    <div class="modal-content">
-      <h2>Inquiry to join a team</h2>
+      <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
       <form action="">
 
        <div class="close" id="close">+</div>
        <script src="index.js"></script>
 
         <input type="text" placeholder="First name">
-       <input type="text" placeholder="Last name">
-        <input type="email" placeholder="Student E-mail">
-        <input type="text" style="height: 50px" placeholder="Tell us about yourself">
+        <input type="text" placeholder="Last name">
+        <input type="text" placeholder="Student E-mail">
+        <textarea rows="5">
+        Tell us about yourself!
+        </textarea>
 
        <!-- Drop list for Inquiry Form -->
        <select class="Game type">
@@ -263,7 +242,7 @@
           <option value="RocketLeague">Rocket League</option>
           <option value="CSGO">CSGO</option>
         </select>
-        <a href="index.html" class="button">Submit</a>
+        <a href="index.html" class="submit-button">SUBMIT</a>
      </form>
    </div>
  </div>

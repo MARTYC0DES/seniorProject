@@ -93,48 +93,6 @@ nav li {
 	display: none;
 }
   
-/* Next & previous buttons */
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-}
-  
-/* Position the "next button" to the right */
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-  
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-}
-  
-/* The dots/bullets/indicators */
-.dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-  
-.active, .dot:hover {
-	background-color: #717171;
-}
   
 /* Fading animation */
 .fade {
@@ -160,7 +118,10 @@ nav li {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	margin-top: 2rem;
+	background-color: rgba(211, 211, 211, 0.2);
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logoSac {
@@ -282,7 +243,7 @@ h1 {
 .coverPageFont {
 	color: rgb(3, 76, 56);
 	font-size: 25px;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: liberator;
 	text-align: center;
 	margin-top: 2rem;
 }
@@ -537,6 +498,16 @@ h1 {
 	top: -130%;
 }
 
+.submit-button{
+	color: gold;
+	background-color: rgb(3, 76, 56);
+	border-radius: 7%;
+	padding: 5px;
+}
+
+.modal-title{
+	color: rgb(3, 76, 56);
+}
 
 .bg-modal {
 	width: 100%;
@@ -548,9 +519,10 @@ h1 {
 	align-items: center;
 	display: none;
 }
+
 .modal-content {
 	width: 300px;
-	height: 300px;
+	height: 420px;
 	background-color: white;
 	border-radius: 5px;
 	text-align: center;
