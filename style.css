@@ -24,6 +24,54 @@ nav li {
 	display: inline;
 }
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown{
+	display: none;
+	position: relative;
+	margin-right: 40px;
+
+}
+
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	border-radius: 2px;
+	border: #000;
+	right:0;
+	display: none;
+	position: absolute;
+	background-color: rgb(192, 178, 124);
+	min-width: 160px;
+	box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 2;
+}
+  
+ /* Links inside the dropdown */
+.dropdown-content a {
+	color:rgb(5, 76, 56);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:rgb(223, 207, 144)}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+.menuImage{
+	width: 40px;
+	height: 40px;
+}
+
 .circle{
 	background: radial-gradient(circle at center, white 100%, transparent 61%);
 	top: 1000;
@@ -38,6 +86,9 @@ nav li {
 
 .zIndex{
 	z-index: 1;
+	position:relative; 
+	top: 15px; 
+	left: 140px;
 }
 
 .navButtons:hover {
@@ -633,48 +684,18 @@ input[type=submit] {
 	}
 }
 
-@media screen and (max-width: 480px ){
+@media screen and (max-width: 1040px ){
 	.height-fix{
 		height: 650px;
 	}
-
-	.header{
-		height: 19rem;
+	.dropdown{
+		display: inline-block;
 	}
-
-	.join-button{
-		margin-left: 3rem;
-		margin-right: 3rem;
-	}
-
-	.esportsLogo{
-		float: none;
-		align-items: none;
-		align-self: center;
-	}
-
-	.navButtons{
-		display: center;
-		width: 100%;
-		text-align: center;
-		padding-right: 6rem;
-		margin-top: 20px;
-		padding-left: 6rem;
-	}
-
-	.homeImg{
+	#navList{
 		display: none;
 	}
-
-	.footer-container{
-		height: 19rem;
+	.zIndex{
+		left: -150px;
 	}
-
-	.footInfo{
-		display: inline-block;
-		align-self: center;
-		padding-right: 15%;
-	}
-
 }
 
