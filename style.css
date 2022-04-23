@@ -625,25 +625,26 @@ select {
 }
 
 .left {
-	margin-left: 6rem;
+	margin-left: 8rem;
 	margin-bottom: 3rem;
-	width: 30%;
+	width: 20%;
 	position: relative;
 	float: left;
 }
 /* For contact information and social media link container*/
 .right {
+	word-spacing: 5px;
 	margin: 0;
 	align-items: center;
 	margin-right: 5rem;
-	margin-left: 5rem;
+	margin-left: 6rem;
 	margin-bottom: 3rem;
 }
 /*Creates a center border for splitting screen*/
 .centered {
 	position: relative;
 	top: 50%;
-	left: 20%;
+	left: 25%;
 	transform: translate(auto, auto);
 	text-align: center;
 }
