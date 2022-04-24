@@ -5,25 +5,46 @@
   </head>
 
   <body class="background-image">
-
     <!-- Header-->
     <div class="header">
       <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
 
       <div class="nav liberatorFont">
-       <nav>
-         <ul>
+        <nav>
+          <ul id="navList">
+            <!-- Join Button -->
+            <button class="join-button liberatorFont" id='button'>JOIN OUR TEAM</button>
+            <script src="index.js"></script>
+
             <!-- Nav Links -->
-            <li><a href="index.html" class="navButtons">HOME</a></li>
             <li><a href="watch.html" class="navButtons">WATCH</a></li>
             <li><a href="teams.html" class="navButtons">TEAMS</a></li>
             <li><a href="match.html" class="navButtons">MATCH</a></li>
             <li><a href="about.html" class="navButtons">ABOUT</a></li>
             <li><a href="contact.html" class="navButtons">CONTACT</a></li>
           </ul>
+
+          <!--Drop down form small screens, does not display with big screens -->
+          <div class="dropdown">
+            <img src="images/menuImg.png" class="menuImage"/>
+            <div class="dropdown-content">
+              <a href="watch.html"> WATCH </a>
+              <a href="teams.html"> TEAMS </a>
+              <a href="match.html">  MATCH </a>
+              <a href="about.html"> ABOUT </a>
+              <a href="contact.html"> CONTACT </a>
+            </div>
+          </div>
+
+          <ul class = "zIndex">
+            <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"><img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+            <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+            <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+            <a href="https://discord.com/invite/hfxzm88" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+          </ul>
         </nav>
-      </div>
-    </div>
+       </div>
+   </div>
 
   
      <div id = "text-container">
@@ -85,4 +106,33 @@
     </footer>
 
 </body>
+  <!-- Modal Section -->
+  <div class="bg-modal" id="modal">
+    <div class="modal-content">
+       <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+       <form action="">
+ 
+        <div class="close" id="close">+</div>
+        <script src="index.js"></script>
+ 
+         <input type="text" placeholder="First name">
+         <input type="text" placeholder="Last name">
+         <input type="text" placeholder="Student E-mail">
+         <textarea rows="5">
+         Tell us about yourself!
+         </textarea>
+ 
+        <!-- Drop list for Inquiry Form -->
+        <select class="Game type">
+           <option disabled selected value>Pick a team</option>
+           <option value="LOL">Leage of Legends</option>
+           <option value="Overwatch">Overwatch</option>
+           <option value="Vanguard">Vanguard</option>
+           <option value="RocketLeague">Rocket League</option>
+           <option value="CSGO">CSGO</option>
+         </select>
+         <a href="index.html" class="submit-button">SUBMIT</a>
+      </form>
+    </div>
+  </div>
 </html>
