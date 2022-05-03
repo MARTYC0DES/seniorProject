@@ -631,19 +631,31 @@ h1 {
 
 .modal-content {
 	width: 300px;
-	height: 420px;
-	background-color: white;
+	height: 450px;
+	background-color: rgb(233, 233, 233);
 	border-radius: 5px;
 	text-align: center;
 	padding: 20px;
 	position: relative;
 }
 
-input,
+input, 
 select {
 	width: 50%;
 	display: block;
 	margin: 10px auto;
+}
+
+/*Form input text elements */
+input[type=email]{
+	width: 100%;
+	padding: 12px;
+	border: 1px #000;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: none;
 }
 
 .close {
@@ -707,7 +719,7 @@ select {
 	text-align: center;
 }
 
-/*Form input text elements*/
+/*Form input text elements */
 input[type=text],
 select,
 textarea {
@@ -763,9 +775,6 @@ input[type=submit] {
       transparent 75%,
 	  transparent 0
     );
-   
-
-	
 
 	margin-bottom: 3%;
 }
