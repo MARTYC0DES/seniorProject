@@ -181,6 +181,12 @@ nav li {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#match-icon-padding{
+	padding: 0;
+	margin: 0;
+	
+}
+
 .logoSac {
 	width: 370px;
 	height: 102px;
@@ -307,6 +313,13 @@ h1 {
 
 .liberatorFont {
 	color: rgb(0, 78, 56);
+	font-size: 22px;
+	font-family: liberator;
+	text-align: center;
+}
+
+.liberatorFontBlack {
+	color: black;
 	font-size: 22px;
 	font-family: liberator;
 	text-align: center;
@@ -713,7 +726,7 @@ input[type=email]{
 /*Creates a center border for splitting screen*/
 .centered {
 	position: relative;
-	top: 50%;
+	
 	left: 25%;
 	transform: translate(auto, auto);
 	text-align: center;
@@ -779,6 +792,18 @@ input[type=submit] {
 	margin-bottom: 3%;
 }
 
+.leftside{
+	
+	height: 50%;
+	width: 85%;
+}
+
+.rightside{
+	height: 50%;
+	width: 100%;
+}
+
+
 @media only screen and (max-width: 975px) {
 	p.delete {
 	   display:none;
@@ -799,5 +824,18 @@ input[type=submit] {
 	.zIndex{
 		left: -150px;
 	}
+	
 }
 
+@media screen and (max-width: 300px ){
+	.leftside{
+		height: 100vh;
+		
+		
+	}
+	
+	.rightside{
+		height: 100vh;
+		
+	}
+}
