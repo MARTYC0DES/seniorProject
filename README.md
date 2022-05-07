@@ -26,4 +26,16 @@ Our original Prototype for the project looked like this.
 
 
 ## Installation
-Insert IDE and Repository installation 
+To open in edit these files you fitst must download a development environment, or IDE. We uised VIsual Studion code to make all of our edits when creating the files.
+The link to downloading the IDE can be found here: [Visual Sudio Code Download](https://code.visualstudio.com "Visual Sudio Code Download"). Once the IDE has been downloaded you must download the repository. At the top of this page you will find a green button labled code "code". This is shown in the figure below.
+<p align="center">
+  <img src="https://github.com/MARTYC0DES/seniorProject/blob/main/images/11.png">
+</p>
+Download the zip file and unzip it. You may open Visual Studio Code. In the top left corner click the "File" tab, and then the "Open Workspace From File".
+<p align="center">
+  <img src="https://github.com/MARTYC0DES/seniorProject/blob/main/images/readme3.png">
+</p>
+The repository has now been opened in your IDE. One the left hand side you may view and edit any of the individual files.
+<p align="center">
+  <img src="https://github.com/MARTYC0DES/seniorProject/blob/main/images/readme4.png">
+</p>
