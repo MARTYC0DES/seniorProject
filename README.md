@@ -10,11 +10,18 @@ The Esports Club of California State University Sacramento is an "Electronic Spo
 ## Developers
 This project was created by The Stringers team comprised of:
 - Martin Dominguez
+	<p>- Skills: Java, Html, CSS, Javascript, SQL. </p>
 - Derrick Mar
+	<p>- Skills: C/C++, Java, Web Development consisting of: HTML/Javascript/CSS, Graphical Design. </p>
 - Harpreet Padda
+	<p>- Skills: HTML, Java, JavaScript, SQL.</p>
 - Daniel Sagredos
+	<p>- Skills: Java, Python, C++, HTML, CSS, Javascript, Adobe Suite, Unreal Engine.</p>
 - Gagandeep Singh
+    <p>- Skills: Java, Html, C/C++, Javascript, SQL.</p>
 - Shaya Zahedi
+	<p>- Skills: Python, Java, C, SQL.</p>
+
 	
 ## Timeline
 Insert Sprint timelines
