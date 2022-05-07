@@ -16,4 +16,6 @@ This project was created by The Stringers team comprised of:
 - Gagandeep Singh
 - Shaya Zahedi
 	
-##
+## Timeline
+
+## Installation
