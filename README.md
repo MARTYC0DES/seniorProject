@@ -6,9 +6,9 @@ This project was for the California State University Sacramento Esports Club. Th
 
 ## Developers
 This project was created by The Stringers team comprised of:
-Markup:	-Martin Dominguez
-		-Derrick Mar
-		-Harpreet Padda
-		-Daniel Sagredos
-		-Gagandeep Singh
-		-Shaya Zahedi
+	- Martin Dominguez
+	- Derrick Mar
+	- Harpreet Padda
+	- Daniel Sagredos
+	- Gagandeep Singh
+	- Shaya Zahedi
