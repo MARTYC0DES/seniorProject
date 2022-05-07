@@ -18,4 +18,9 @@ This project was created by The Stringers team comprised of:
 	
 ## Timeline
 
+## Prototype
+Our original Prototype for the project looked like this.
+![alt text](https://github.com/MARTYC0DES/seniorProject/blob/485513e1d9075a97341a01e4c83847d028110e72/images/Prototype2.jpg)
+
+
 ## Installation
