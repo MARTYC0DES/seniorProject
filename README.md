@@ -4,11 +4,16 @@
 ## Project Description
 This project was for the California State University Sacramento Esports Club. This project was to help the club have more outreach and allow for the club to have a more professional look.
 
+##Background
+The Esports Club of California State University Sacramento is an "Electronic Sports" club that hosts both casual and competitive video game events. The club is meant for bringing together students that are just interested in video games as well those who want to compete in gaming leagues and tournaments. Our client is Isaac Rodriguez, the current president, and Sean Tirado, the future president, of the California State University Sacramento Esports Club. The problem that was proposed by them was to create a site for expanding the esports club and add a look of professionalism to the club.
+
 ## Developers
 This project was created by The Stringers team comprised of:
-	- Martin Dominguez
-	- Derrick Mar
-	- Harpreet Padda
-	- Daniel Sagredos
-	- Gagandeep Singh
-	- Shaya Zahedi
+- Martin Dominguez
+- Derrick Mar
+- Harpreet Padda
+- Daniel Sagredos
+- Gagandeep Singh
+- Shaya Zahedi
+	
+##
