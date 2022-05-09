@@ -32,9 +32,9 @@ This project was created by The Stringers team comprised of:
 [Sprint 05: User Interface Development](#Sprint05)<br>
 [Sprint 06: User Interface](#Sprint06)<br>
 [Sprint 07: User Interface + DataBase](#Sprint07)<br>
-[Sprint 08: 100% Functionalities + System Testing](#Sprint08)<br>
-[Sprint 09: Wrapping up Development + Docuementation](#Sprint09)<br>
-[Sprint 10: Stable Ready-to-Release Version](#Sprint10)<br>
+[Sprint 08: 100% Deployed + Functionality](#Sprint08)<br>
+[Sprint 09: Wrapping up Development + System Testing](#Sprint09)<br>
+[Sprint 10: Stable Ready-to-Release Version + Documentation](#Sprint10)<br>
 
 <p id="Sprint00" align="center">Sprint 00</p>
 <p>Sprint 00 consisted of getting a client for our senior project. In this process, the team Stingers found that the recently added Sacramento State Esports Club did not have a website. The Stingers brought the proposal to Julia Barges, the Present of the club during the Fall 2021 semester who accepted the teams proposal. In this proposal, the team Stingers were to develop a webpage for the club in hope to increase student involvment. </p>
@@ -56,19 +56,24 @@ This project was created by The Stringers team comprised of:
 <p>Sprint 05 was the development of a working User Interface. The team began this sprint by creating the landing page for the club’s website. During the development of the User Interface, the team made sure to build the site exactly the way it looked in the prototype. </p>
 
 <p id="Sprint06" align="center">Sprint 06 </p>
-<p></p>
+<p>Sprint 06 was the contiued deveopment of the User Interface. The team began development of the watch page, match page, teams page, about page, and contact page. The team also continued developing the landing page. The team developed the pages according to the protypes. 
+</p>
 
 <p id="Sprint07" align="center">Sprint 07 </p>
-<p></p>
+<p>In Sprint 07 the team continued developing the User interface according to the protypes and the client's standards. Part of the team began development of the database. During this Sprint the team Stingers met with the clients to discuss possible finishing touches. The clients displayed mostly postive feedback, but expressed some final wants that the team was able to accomadate during the next Sprint.
+</p>
 
 <p id="Sprint08" align="center">Sprint 08 </p>
-<p></p>
+<p>During Sprint 08 the team was finishing the last touches and began deploying the product. The team also deployed functionality in order to ensure the website worked on computers as well as mobile devices. Towards the end of the sprint the team began Testing.
+</p>
 
 <p id="Sprint09" align="center">Sprint 09 </p>
-<p></p>
+<p>In Sprint 09 the team was wrapping up development and finishing system testing.
+In testing the team made sure that everything worked as expected, and that there were not any bugs within the website.</p>
 
 <p id="Sprint10" align="center">Sprint 10 </p>
-<p></p>
+<p>In Sprint 10 our website is deployed and we are finalzing documentation in order to hand over the project.
+</p>
 
 ## Prototype
 Our original Prototype for the project looked like this.
