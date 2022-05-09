@@ -56,7 +56,7 @@ This project was created by The Stringers team comprised of:
 <p>Sprint 05 was the development of a working User Interface. The team began this sprint by creating the landing page for the club’s website. During the development of the User Interface, the team made sure to build the site exactly the way it looked in the prototype. </p>
 
 <p id="Sprint06" align="center">Sprint 06 </p>
-<p>Sprint 06 was the contiued deveopment of the User Interface. The team began development of the watch page, match page, teams page, about page, and contact page. The team also continued developing the landing page. The team developed the pages according to the protypes. 
+<p>Sprint 06 was the contiued deveopment of the User Interface. The team began development of the watch page, match page, teams page, about page, and contact page. The team also continued developing the landing page. The team developed the pages according to the protypes. The watch page helps outreach by showing the club's twitch stream and some highlights. The teams page contains information about each team and their players. The about page includes information on the club itself. The match page shows when club events happen, and includes a link if streamed. The contact page shows how to contact the club management.  
 </p>
 
 <p id="Sprint07" align="center">Sprint 07 </p>
