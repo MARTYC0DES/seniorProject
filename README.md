@@ -24,7 +24,56 @@ This project was created by The Stringers team comprised of:
 
 	
 ## Timeline
-Insert Sprint timelines
+[Sprint 00: Finding a Client](#Sprint00)<br>
+[Sprint 01: Project Planning](#Sprint01)<br>
+[Sprint 02: Project Prototype](#Sprint02)<br>
+[Sprint 03: Plan the Tech Stack](#Sprint03)<br>
+[Sprint 04: Setup Environment](#Sprint04)<br>
+[Sprint 05: User Interface Development](#Sprint05)<br>
+[Sprint 06: User Interface + DB (40% functionality)](#Sprint06)<br>
+[Sprint 07: User Interface + DataBase (80% functionality)](#Sprint07)<br>
+[Sprint 08: 100% Functionalities + System Testing](#Sprint08)<br>
+[Sprint 09: Wrapping up Development](#Sprint09)<br>
+[Sprint 10: Stable Ready-to-Release Version](#Sprint10)<br>
+[Sprint 11: Finalizing Documentation](#Sprint11)<br>
+
+
+<p id="Sprint00" align="center">Sprint 00</p>
+<p>Sprint 00 consisted of getting a client for our senior project. In this process, the team Stingers found that the recently added Sacramento State Esports Club did not have a website. The Stingers brought the proposal to Julia Barges, the Present of the club during the Fall 2021 semester who accepted the teams proposal. In this proposal, the team Stingers were to develop a webpage for the club in hope to increase student involvment. </p>
+
+<p id="Sprint01" align="center">Sprint 01 </p>
+<p>Sprint 01 focused on the planning of the project. Team the Stingers, developed a context diagram and Business event table for the project. This helped dramatically with the development of the project.</p>
+
+<p id="Sprint02" align="center" >Sprint 02 </p>
+<p>During Sprint 02, the team's goal was to develop a prototype. This process began with a very rough paper sketch (picture below). <img src="https://github.com/MARTYC0DES/seniorProject/blob/main/images/roughPrototype.PNG" width="60%" height="60%"> <br> The team then used Figma to develop a proper protoype and the look of the user interface for the webpage. For more details on the prototype, <a href="#prototype"> Click Here! </a> </p>
+
+<p id="Sprint03" align="center">Sprint 03 </p>
+<p>Sprint 03 was the development of Tech Stack for our project. The team Stingers decided to use HTML, CSS, JavaScript and PHP for various reasons. Hypertext markup language because it is the structure for a webpage and it's content. It is the foundation of a website which contains the information which tells the browser what is on the page. We used CSS, because it made the front-end of the website look appealing while also creating a great user experience. Without CSS, the website would have looked unappealing and would have made it impossible for users to navigate through the website. Javascript, to handle the user inputs and validation. It also allowed us to make the web application interactive. It is also one of the most commonly used programming languages by developers so the team wanted to gain experience in this language.
+</p>
+
+<p id="Sprint04" align="center">Sprint 04 </p>
+<p>Sprint 04 was centered around the team setting up their work environment. For our integrated development environment, the team decided to use Visual Studio Code. VS Code is a code editor redefined and optimized for building and debugging modern web applications, and it is also free. With this in mind, the team felt Visual Studio Code was perfect for our project. For code source management we used GitHub, which offers storing, tracking, and collaborating on a software project. Lastly, for tracking product development we used Jira. Jira is perfect for project management. </p>
+
+<p id="Sprint05" align="center">Sprint 05 </p>
+<p>Sprint 05 was the development of a working User Interface. The team began this sprint by creating the landing page for the club’s website. During the development of the User Interface, the team made sure to build the site exactly the way it looked in the prototype. </p>
+
+<p id="Sprint06" align="center">Sprint 06 </p>
+<p></p>
+
+<p id="Sprint07" align="center">Sprint 07 </p>
+<p></p>
+
+<p id="Sprint08" align="center">Sprint 08 </p>
+<p></p>
+
+<p id="Sprint09" align="center">Sprint 09 </p>
+<p></p>
+
+<p id="Sprint10" align="center">Sprint 10 </p>
+<p></p>
+
+<p id="Sprint11" align="center">Sprint 11</p>
+<p></p>
 
 ## Prototype
 Our original Prototype for the project looked like this.
@@ -32,7 +81,7 @@ Our original Prototype for the project looked like this.
 ![alt text](https://github.com/MARTYC0DES/seniorProject/blob/485513e1d9075a97341a01e4c83847d028110e72/images/Prototype2.jpg)
 
 
-## Installation
+<h2 id="prototype"> Installation </h2>
 To open in edit these files you fitst must download a development environment, or IDE. We uised VIsual Studion code to make all of our edits when creating the files.
 The link to downloading the IDE can be found here: [Visual Sudio Code Download](https://code.visualstudio.com "Visual Sudio Code Download"). Once the IDE has been downloaded you must download the repository. At the top of this page you will find a green button labled code "code". This is shown in the figure below.
 <p align="center">
