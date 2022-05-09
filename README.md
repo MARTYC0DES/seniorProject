@@ -30,13 +30,11 @@ This project was created by The Stringers team comprised of:
 [Sprint 03: Plan the Tech Stack](#Sprint03)<br>
 [Sprint 04: Setup Environment](#Sprint04)<br>
 [Sprint 05: User Interface Development](#Sprint05)<br>
-[Sprint 06: User Interface + DB (40% functionality)](#Sprint06)<br>
-[Sprint 07: User Interface + DataBase (80% functionality)](#Sprint07)<br>
+[Sprint 06: User Interface](#Sprint06)<br>
+[Sprint 07: User Interface + DataBase](#Sprint07)<br>
 [Sprint 08: 100% Functionalities + System Testing](#Sprint08)<br>
-[Sprint 09: Wrapping up Development](#Sprint09)<br>
+[Sprint 09: Wrapping up Development + Docuementation](#Sprint09)<br>
 [Sprint 10: Stable Ready-to-Release Version](#Sprint10)<br>
-[Sprint 11: Finalizing Documentation](#Sprint11)<br>
-
 
 <p id="Sprint00" align="center">Sprint 00</p>
 <p>Sprint 00 consisted of getting a client for our senior project. In this process, the team Stingers found that the recently added Sacramento State Esports Club did not have a website. The Stingers brought the proposal to Julia Barges, the Present of the club during the Fall 2021 semester who accepted the teams proposal. In this proposal, the team Stingers were to develop a webpage for the club in hope to increase student involvment. </p>
@@ -70,9 +68,6 @@ This project was created by The Stringers team comprised of:
 <p></p>
 
 <p id="Sprint10" align="center">Sprint 10 </p>
-<p></p>
-
-<p id="Sprint11" align="center">Sprint 11</p>
 <p></p>
 
 ## Prototype
