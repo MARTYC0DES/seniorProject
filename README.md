@@ -37,7 +37,7 @@ This project was created by The Stringers team comprised of:
 [Sprint 10: Stable Ready-to-Release Version + Documentation](#Sprint10)<br>
 
 <p id="Sprint00" align="center">Sprint 00</p>
-<p>Sprint 00 consisted of getting a client for our senior project. In this process, the team Stingers found that the recently added Sacramento State Esports Club did not have a website. The Stingers brought the proposal to Julia Barges, the Present of the club during the Fall 2021 semester who accepted the teams proposal. In this proposal, the team Stingers were to develop a webpage for the club in hope to increase student involvment. </p>
+<p>Sprint 00 consisted of getting a client for our senior project. In this process, the team Stingers found that the recently added Sacramento State Esports Club did not have a website. The Stingers brought the proposal to Julia Barges, the President of the club during the Fall 2021 semester who accepted the teams proposal. In this proposal, the team Stingers were to develop a webpage for the club in hope to increase student involvment. </p>
 
 <p id="Sprint01" align="center">Sprint 01 </p>
 <p>Sprint 01 focused on the planning of the project. Team the Stingers, developed a context diagram and Business event table for the project. This helped dramatically with the development of the project.</p>
