@@ -181,6 +181,7 @@ nav li {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 #match-icon-padding{
 	padding: 0;
 	margin: 0;
@@ -347,6 +348,20 @@ h1 {
 	font-size: 3rem;
 	font-family: liberator;
 	text-align: center;
+	margin-top: 1rem;
+}
+
+.watch-title {
+	color: rgb(0, 78, 56);
+	font-size: 3rem;
+	font-family: liberator;
+	margin-top: 1rem;
+}
+
+.watch-title2 {
+	color: rgb(0, 78, 56);
+	font-size: 3rem;
+	font-family: liberator;
 	margin-top: 1rem;
 }
 
@@ -588,11 +603,31 @@ h1 {
 	padding-top: 50px;
 }
 
+/* Title Container Watch Page */
+.TitleContainer{
+	margin-top: 4%;
+	position: relative;
+}
+
+.LeftTitle{
+	width: 50%;
+	text-align: center;
+	float: left;
+
+}
+
+.RightTitle{
+	width: 50%;
+	text-align: center;
+	margin-left: 50%;
+	
+}
+
 /* Upper Container Watch Page */
 .UpperContainer{
 	width: 100%;
 	height: 600px;
-	margin-top: 5%;
+	margin-top: 7%;
 	margin-bottom: 5%;
 }
 
@@ -606,6 +641,7 @@ h1 {
 	display: inline;
 	position: relative;
 	padding-left: 10%;
+
 }
 
 #youtube-frame-topright{
@@ -860,18 +896,26 @@ input[type=submit] {
 }
 
 
-@media screen and (max-width: 1040px ){
-	.height-fix{
-		height: 650px;
-	}
-	.dropdown{
-		display: inline-block;
-	}
-	#navList{
+/* Watch page media query*/
+@media screen and (max-width: 750px ){
+
+	/* titles */
+	.watch-title {
 		display: none;
 	}
-	.zIndex{
-		left: -150px;
+
+	.watch-title2 {
+		color: rgb(0, 78, 56);
+		font-size: 3rem;
+		font-family: liberator;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+
+	.RightTitle{
+		margin-left: 25%;
+		margin-top: 10%;
 	}
 
 	.twitch1{
@@ -947,6 +991,23 @@ input[type=submit] {
 		height:350px;
 	}
 	
+}
+
+@media screen and (max-width: 1080px ){
+	.height-fix{
+		height: 650px;
+	}
+	.dropdown{
+		display: inline-block;
+	}
+	#navList{
+		display: none;
+	}
+	.zIndex{
+		left: -150px;
+	}
+
+
 }
 
 @media screen and (max-width: 300px ){
