@@ -76,7 +76,9 @@ In testing the team made sure that everything worked as expected, and that there
 </p>
 
 ## Prototype
-Our original Prototype for the project looked like this.
+Our Prototype begin its development with a rough paper sketch of a wireframe. The purpose of the wireframe was to maximize the site's user experience potential before it is actually avaliable to visitors. By creating the wireframe, this allowed us to troubleshoot issues before they became a problem to our users also allowing the development team to save time. 
+
+After the wireframe was completed, the team began developing a mock-up of the site. The development team used both Figma and photoshop as our prototype tool. While creating the User Interface of the webpage, the development had to keep in mind the color combinations allowed. Being that the website would be a Sacramento State University club, there were many guildline to follow. When the mockup was complete, the team ended up with the following (image below). 
 
 ![alt text](https://github.com/MARTYC0DES/seniorProject/blob/485513e1d9075a97341a01e4c83847d028110e72/images/Prototype2.jpg)
 
