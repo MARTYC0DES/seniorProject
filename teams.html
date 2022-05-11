@@ -52,11 +52,10 @@
 
     <!-- List of front images -->
     
-<!--
-        ---------------Database Code--------------
+
 
    <div class="list-images">
-    <a id="team1" href="#team1"></a>
+    <a id="team1" href="#"></a>
     <img src="images/valorant.png" class="game-list-image" alt="valorant image">
     </a>
     <a id="team2" href="#"><img src="images/leagueoflegends.png" class="game-list-image" alt="leagueoflegends image">
@@ -69,15 +68,19 @@
   </div>
 
 <div id="teamRows"></div>
--->
+
+
+<!--
+        ---------------HardCoded Teams Page--------------
     <div class="list-imagesTeams "  >
        <a href="#valorant-teams"></a><img src="images/valorant.png" class="game-list-image" alt="valorant image"></a>
        <a href="#leagueoflegends-teams"><img src="images/leagueoflegends.png" class="game-list-image" alt="leagueoflegends image"></a>
        <a href="#overwatch-teams"><img src="images/overwatch.png" class="game-list-image" alt="overwatch image"></a>
        <a href="#ssbu-teams"><img src="images/ssb.png" class="game-list-image" alt="super smash bros. image"></a>
     </div class>
+    -->
 
-    
+   <!-- 
     <div class= "greenBg2 " id = "valorant-teams">
       <p class = "liberatorFontLargeWhite" >valorant<br></p>
     </div>
@@ -249,9 +252,38 @@
           </ul>
   </footer>
 
-
-    <!-- 
-          --------------Database Code---------------------
+</body>
+  
+  <div class="bg-modal" id="modal">
+    <div class="modal-content">
+       <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+       <form action="">
+ 
+        <div class="close" id="close">+</div>
+        <script src="index.js"></script>
+ 
+         <input type="text" placeholder="First name">
+         <input type="text" placeholder="Last name">
+         <input type="text" placeholder="Student E-mail">
+         <textarea rows="5">
+         Tell us about yourself!
+         </textarea>
+ 
+        
+        <select class="Game type">
+           <option disabled selected value>Pick a team</option>
+           <option value="LOL">Leage of Legends</option>
+           <option value="Overwatch">Overwatch</option>
+           <option value="Vanguard">Vanguard</option>
+           <option value="RocketLeague">Rocket League</option>
+           <option value="CSGO">CSGO</option>
+         </select>
+         <a href="index.html" class="submit-button">SUBMIT</a>
+      </form>
+    </div>
+  </div>
+  </html>
+  -->
 
  <div class="bg-modal">
   <div class="modal-content">
@@ -308,15 +340,15 @@
         for (let [key, value] of Object.entries(groupByTeamData)) {
           document.getElementById("team"+index).href="#"+key;
           index++;
-          row += `<div id="${key}"><p class="liberatorFontLargeBlack">${key}<br><br></p></div>`;
+          row += `<div class = "greenBg2" id="${key}"><p class="liberatorFontLargeWhite">${key}<br></p></div>`;
          
           for (let rowData of value) {
-            row += `<div><img src="${rowData.image}" style="float:left; position:relative; left: 13%;" alt="DDay" height="300" width="300">
+            row += `<div id = "text-container" ><div><img src="${rowData.image}" style="float:left; position:relative; left: 13%;" alt="picture" height="300" width="300">
                        <p style="position:relative; left:15%; min-width: 0px;  max-width: 50%; display: inline-block;"
                         class="liberatorFont center"><span class="liberatorFontLarge"> ${rowData.playerName} <br></span>
                         ${rowData.name}<br><br>                        
                         Position: ${rowData.roles}  <br><br>
-                       ${rowData.description}<br><br><br><br><br><br><br></p></div>`;
+                       ${rowData.description}<br><br><br><br><br><br><br></p></div></div>`;
           }
         }
         $("#teamRows").append(row);
@@ -332,36 +364,22 @@
       }, {});
     };
   </script>
-  -->
 
-</body>
-  <!-- Modal Section -->
-  <div class="bg-modal" id="modal">
-    <div class="modal-content">
-       <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
-       <form action="">
- 
-        <div class="close" id="close">+</div>
-        <script src="index.js"></script>
- 
-         <input type="text" placeholder="First name">
-         <input type="text" placeholder="Last name">
-         <input type="text" placeholder="Student E-mail">
-         <textarea rows="5">
-         Tell us about yourself!
-         </textarea>
- 
-        <!-- Drop list for Inquiry Form -->
-        <select class="Game type">
-           <option disabled selected value>Pick a team</option>
-           <option value="LOL">Leage of Legends</option>
-           <option value="Overwatch">Overwatch</option>
-           <option value="Vanguard">Vanguard</option>
-           <option value="RocketLeague">Rocket League</option>
-           <option value="CSGO">CSGO</option>
-         </select>
-         <a href="index.html" class="submit-button">SUBMIT</a>
-      </form>
-    </div>
-  </div>
+<footer class="footer-container">
+  <img src="images/esports.png" class="esportsLogo2" atl="sacState logo">
+        
+        
+         <p class="footInfo delete" style>
+           Official Sport Club of <a href="https://www.csus.edu"target="_blank" rel="noopener noreferrer" class="numberHref">California State University, Sacramento</a>.
+         </p>
+   
+     
+         <ul style = "position:relative; top: 15px; left:50px" >
+           <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"> <img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
+           <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
+           <a href="https://www.twitch.tv/sacstateesportsclub"target="_blank" rel="noopener noreferrer"><img class="social-resize" style = "position:relative; left: 70px;" src="images/twitch_icon.png"   alt="twitch logo"></a>
+           <a href="https://discord.com/invite/hfxzm88" target="_blank" rel="noopener noreferrer"><img class="social-resize " style = "position:relative; left: 105px;" src="images/discord_icon.png"  alt="discord logo"></a>
+         </ul>
+ </footer>
+  
 </html>
