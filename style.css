@@ -897,7 +897,7 @@ input[type=submit] {
 
 
 /* Watch page media query*/
-@media screen and (max-width: 750px ){
+@media screen and (max-width: 850px ){
 
 	/* titles */
 	.watch-title {
