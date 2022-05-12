@@ -2,8 +2,8 @@
     $name = $_POST['name'];
     $visitor_email = $_POST['email'];
     $message = $_POST['message'];
-
-    $email_from = 'derrickmar03@gmail.com';
+    //Change from Email to any email
+    $email_from = 'student1221@mail.com';
     
     $email_subject = "New Form Submission";
 
@@ -11,7 +11,7 @@
                     "User Email: $visitor_email. \n".
                         "User Message: $message. \n";
 
-
+    //Change to email to email that you want the messages to go to
     $to = "lalasi3446@eoscast.com";
     
     $headers = "From: $email_from \r\n";
