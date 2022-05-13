@@ -143,33 +143,30 @@
 
   </footer>
 </body>
-  <!-- Modal Section -->
-  <div class="bg-modal" id="modal">
-    <div class="modal-content">
-       <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
-       <form action="">
- 
-        <div class="close" id="close">+</div>
-        <script src="index.js"></script>
- 
-         <input type="text" placeholder="First name">
-         <input type="text" placeholder="Last name">
-         <input type="text" placeholder="Student E-mail">
-         <textarea rows="5">
-         Tell us about yourself!
-         </textarea>
- 
-        <!-- Drop list for Inquiry Form -->
-        <select class="Game type">
-           <option disabled selected value>Pick a team</option>
-           <option value="LOL">Leage of Legends</option>
-           <option value="Overwatch">Overwatch</option>
-           <option value="Vanguard">Vanguard</option>
-           <option value="RocketLeague">Rocket League</option>
-           <option value="CSGO">CSGO</option>
-         </select>
-         <a href="index.html" class="submit-button">SUBMIT</a>
-      </form>
+    <!-- Modal Section -->
+    <div class="bg-modal" id="modal">
+      <div class="modal-content">
+         <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+   
+         <form method="post" action="inquiry-form.php">
+          <div class="close" id="close">+</div>
+          <script src="index.js"></script>
+   
+           <input name="first-name" type="text" placeholder="First name" required>
+           <input name="last-name" type="text" placeholder="Last name" required>
+           <input name="students-email" type="email" placeholder="Student E-mail" required pattern=".+@csus\.edu" title="E-email must end with @csus.edu">
+           <textarea name="students-about" rows="5" placeholder="Tell us about yourself!"></textarea>
+   
+          <!-- Drop list for Inquiry Form -->
+          <select name="game-interest" class="Game type" required>
+             <option disabled selected value="">Pick a team</option>
+             <option value="Vanguard">Valorant</option>
+             <option value="LOL">Leage of Legends</option>
+             <option value="Overwatch">Overwatch</option>
+             <option value="SSB">Super Smash Bros</option>
+           </select>
+           <button type="submit" class="submit-button" value="Submit">SUBMIT</button>
+        </form>
+      </div>
     </div>
-  </div>
-</html>
+   </html>

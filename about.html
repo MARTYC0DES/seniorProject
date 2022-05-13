@@ -1,12 +1,15 @@
 <!-- DOCTYPE html-->
 <html>
   <head>
+    <!-- Change page Tab Title Here-->
     <title>About Esports</title>
     <link href='style.css' rel='stylesheet'>
   </head>
 
+  <!-- Transparent CSUS Background Image-->
   <body class="background-image">
-    <!-- Header-->
+    
+    <!-- Start of Header-->
     <div class="header">
       <a href="index.html"><img src="images/esports.png" class="esportsLogo" alt="Esports logo" ></a>
 
@@ -17,7 +20,7 @@
             <button class="join-button liberatorFont" id='button'>JOIN OUR TEAM</button>
             <script src="index.js"></script>
 
-            <!-- Nav Links -->
+            <!-- Header Links to Other Pages -->
             <li><a href="watch.html" class="navButtons">WATCH</a></li>
             <li><a href="teams.html" class="navButtons">TEAMS</a></li>
             <li><a href="match.html" class="navButtons">MATCH</a></li>
@@ -25,7 +28,8 @@
             <li><a href="contact.html" class="navButtons">CONTACT</a></li>
           </ul>
 
-          <!--Drop down form small screens, does not display with big screens -->
+          <!-- (Hamburger Style Menu for Mobile Devices)
+            Drop down form small screens, does not display with big screens -->
           <div class="dropdown">
             <img src="images/menuImg.png" class="menuImage"/>
             <div class="dropdown-content">
@@ -36,7 +40,8 @@
               <a href="contact.html"> CONTACT </a>
             </div>
           </div>
-
+          
+          <!-- Header Social Media Links -->
           <ul class = "zIndex">
             <a href="https://twitter.com/esports_sac" target="_blank" rel="noopener noreferrer"><img class="social-resize" src="images/twitter_icon.png"  alt="twitter logo"></a>
             <a href="https://www.instagram.com/sacstateesportsclub/" target="_blank" rel="noopener noreferrer"><img class="social-resize " src="images/ig_icon.png" style = "position:relative; left: 35px;" alt="instagram logo"></a>
@@ -46,11 +51,12 @@
         </nav>
        </div>
    </div>
+   <!-- End of Header-->
 
-
+   <!-- About Esports Photo-->
    <img src="images/aboutEsports.png" style="max-width:1100px; padding-top: 20px " class="homeImg center" alt="Cover page" >
 
-
+    <!-- About Esports Paragraph 1-->
    <h1 class = "liberatorFontXLarge" style="padding-top: 20px"> What is Esports?<br><br>  </h1>
    <p class="liberatorFont maxWidth1 center">
     Esports, short for electronic sports, has become widely acknowledged as a new and upcoming sport using video games as competition. Often played
@@ -61,10 +67,12 @@
     
         <br><br>
    </p>
+   <!-- About Esports Bold Middle Sentence-->
    <p class="liberatorFontLargeBlack maxWidth1 center">
         Our goal is to bring esports to the forefront of csus sports teams, inline with support seen for traditional athletics.
         <br><br>
    </p>
+   <!-- About Esports Paragraph 2-->
    <p class="liberatorFont maxWidth1 center">
     Founded in 2019, the Sacramento State Esports Club aims to invite Gamers to compete in various collegiate tournaments on 
     behalf of the University. Our goal is to provide an opportunity for students to develop leadership, communication, and 
@@ -79,7 +87,7 @@
 
 
 
-
+   <!-- Start of Footer-->
   <footer class ="footer-container">
 
     <img src="images/esports.png" class="esportsLogo2" atl="sacState logo">
@@ -98,37 +106,34 @@
     </ul>
 
   </footer>
-
-
-
+   <!-- End of Footer-->
 </body>
-  <!-- Modal Section -->
-  <div class="bg-modal" id="modal">
-    <div class="modal-content">
-       <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
-       <form action="">
- 
-        <div class="close" id="close">+</div>
-        <script src="index.js"></script>
- 
-         <input type="text" placeholder="First name">
-         <input type="text" placeholder="Last name">
-         <input type="text" placeholder="Student E-mail">
-         <textarea rows="5">
-         Tell us about yourself!
-         </textarea>
- 
-        <!-- Drop list for Inquiry Form -->
-        <select class="Game type">
-           <option disabled selected value>Pick a team</option>
-           <option value="LOL">Leage of Legends</option>
-           <option value="Overwatch">Overwatch</option>
-           <option value="Vanguard">Vanguard</option>
-           <option value="RocketLeague">Rocket League</option>
-           <option value="CSGO">CSGO</option>
-         </select>
-         <a href="index.html" class="submit-button">SUBMIT</a>
-      </form>
+
+
+    <!-- Join Team Button-->
+    <div class="bg-modal" id="modal">
+      <div class="modal-content">
+         <h2 class="modal-title">INQUIRY TO JOIN A TEAM</h2>
+   
+         <form method="post" action="inquiry-form.php">
+          <div class="close" id="close">+</div>
+          <script src="index.js"></script>
+   
+           <input name="first-name" type="text" placeholder="First name" required>
+           <input name="last-name" type="text" placeholder="Last name" required>
+           <input name="students-email" type="email" placeholder="Student E-mail" required pattern=".+@csus\.edu" title="E-email must end with @csus.edu">
+           <textarea name="students-about" rows="5" placeholder="Tell us about yourself!"></textarea>
+   
+          <!-- Drop list for Inquiry Form -->
+          <select name="game-interest" class="Game type" required>
+             <option disabled selected value="">Pick a team</option>
+             <option value="Vanguard">Valorant</option>
+             <option value="LOL">Leage of Legends</option>
+             <option value="Overwatch">Overwatch</option>
+             <option value="SSB">Super Smash Bros</option>
+           </select>
+           <button type="submit" class="submit-button" value="Submit">SUBMIT</button>
+        </form>
+      </div>
     </div>
-  </div>
-</html>
+   </html>
